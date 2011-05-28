@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rdf:RDF
+  xmlns = "http://www.cs.huji.ac.il/~danieb12/RdfGeneratorSchema.rdf#"
+  xml:base = "http://www.cs.huji.ac.il/~danieb12/RdfGeneratorSchema.rdf"
+  xmlns:rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+>
+
+<!-- ####################################### CLASSES  ##################################### -->
+
+<rdfs:Class rdf:ID="SamplerFunction">
+	<rdfs:label>A container of all types and dictionary samplers</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="NameSpaceMappings">
+	<rdfs:label>A container of all alias-namespace mappings</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="TypePropertiesMappings">
+	<rdfs:label>A container which defines which literals to generate automatically for a given type</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="GraphCreator">
+	<rdfs:label>A container of all construction patterns that are going to be applied</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Construct">
+	<rdfs:label>An RDF construction pattern</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Query">
+	<rdfs:label>query</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Mode">
+	<rdfs:label>abstract sampling mode</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="GlobalDistinctMode">
+	<rdfs:label>global-distinct sampling mode</rdfs:label>
+	<rdfs:subClassOf rdf:resource="#Mode" />
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="LocalDistinctMode">
+	<rdfs:label>local-distinct sampling mode</rdfs:label>
+	<rdfs:subClassOf rdf:resource="#Mode" />
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="RepeatableMode">
+	<rdfs:label>repeatrable sampling mode</rdfs:label>
+	<rdfs:subClassOf rdf:resource="#Mode" />
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="QueryResultSelection">
+	<rdfs:label>abstract sampling mode</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="SelectAll">
+	<rdfs:label>selects all of the results</rdfs:label>
+	<rdfs:subClassOf rdf:resource="#QueryResultSelection" />
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="SelectConst">
+	<rdfs:label>selects a specific number of results</rdfs:label>
+	<rdfs:subClassOf rdf:resource="#QueryResultSelection" />
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="SelectNumberRange">
+	<rdfs:label>selects a range of results in numbers</rdfs:label>
+	<rdfs:subClassOf rdf:resource="#QueryResultSelection" />
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="SelectRange">
+	<rdfs:label>selects a range of results in precentage</rdfs:label>
+	<rdfs:subClassOf rdf:resource="#QueryResultSelection" />
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="MapPair">
+	<rdfs:label>A pair of values in a map</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="AttVarPair">
+	<rdfs:label>A pair of attribute and variable</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="TypePropsPair">
+	<rdfs:label>A pair of type and a list of literal properties</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="CreationPattern">
+	<rdfs:label>the pattern that is going to be created or updated</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="PatternRepeatMode">
+	<rdfs:label>abstract repeat mode</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="RepeatConst">
+	<rdfs:label>repeats the creation-pattern a constant number of times</rdfs:label>
+	<rdfs:subClassOf rdf:resource="#PatternRepeatMode" />
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="RepeatRange">
+	<rdfs:label>repeats the creation-pattern a random number of times within some range</rdfs:label>
+	<rdfs:subClassOf rdf:resource="#PatternRepeatMode" />
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="DistributionFunction">
+	<rdfs:label>abstract distribution function</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Uniform">
+	<rdfs:label>represents a uniform distribution function</rdfs:label>
+	<rdfs:subClassOf rdf:resource="#DistributionFunction" />
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="AliasNsPair">
+	<rdfs:label>a pair of alias and namespace</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Property">
+	<rdfs:label>a literal property that a given type has</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Node">
+	<rdfs:label>abstract node</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="OldNode">
+	<rdfs:label>represents a node that existed in the graph which is part of the new pattern</rdfs:label>
+	<rdfs:subClassOf rdf:resource="#Node" />
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="NewNode">
+	<rdfs:label>represents a new node which is created as part of the new pattern</rdfs:label>
+	<rdfs:subClassOf rdf:resource="#Node" />
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Edge">
+	<rdfs:label>abstract edge</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="NewEdge">
+	<rdfs:label>represents a new edge which is created as part of the new pattern</rdfs:label>
+	<rdfs:subClassOf rdf:resource="#Edge" />
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="DictionarySampler">
+	<rdfs:label>abstract dictionary sampler</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="CustomDictionarySampler">
+	<rdfs:label>represents a dictionary-sampler which uses a custom sampling function</rdfs:label>
+	<rdfs:subClassOf rdf:resource="#DictionarySampler" />
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="StandardDictionarySampler">
+	<rdfs:label>represents a standard dictionary-sampler</rdfs:label>
+	<rdfs:subClassOf rdf:resource="#DictionarySampler" />
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="CounterDictionarySampler">
+	<rdfs:label>represents a counter dictionary-sampler</rdfs:label>
+	<rdfs:subClassOf rdf:resource="#DictionarySampler" />
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="ExternalConstDictionarySampler">
+	<rdfs:label>represents a constant dictionary-sampler that will be dynamically initialized during runtime</rdfs:label>
+	<rdfs:subClassOf rdf:resource="#DictionarySampler" />
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="ConstDictionarySampler">
+	<rdfs:label>represents a constant dictionary-sampler that always returns the same value</rdfs:label>
+	<rdfs:subClassOf rdf:resource="#DictionarySampler" />
+</rdfs:Class>
+
+<!-- ####################################### PROPERTIES  ##################################### -->
+
+
+<rdf:Property rdf:ID="constructList">
+	<rdfs:label>a list of construct instances</rdfs:label>
+    <rdfs:domain rdf:resource="#GraphCreator"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="typeDictionaryMappings">
+	<rdfs:label>a list of mappings between types and dictionary samplers</rdfs:label>
+    <rdfs:domain rdf:resource="#SamplerFunction"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="typePropertiesMappings">
+	<rdfs:label>a list of mappings between types and a list of literal properties</rdfs:label>
+    <rdfs:domain rdf:resource="#TypePropertiesMappings"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="PropertiesList">
+	<rdfs:label>a list of literal properties</rdfs:label>
+    <rdfs:domain rdf:resource="#TypePropsPair"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="aliasNsMappings">
+	<rdfs:label>a list of mappings between alias names and the full namespace</rdfs:label>
+    <rdfs:domain rdf:resource="#NameSpaceMappings"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="queries">
+	<rdfs:label>a list of queries</rdfs:label>
+    <rdfs:domain rdf:resource="#Construct"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="creationPattern">
+	<rdfs:label>a creation-pattern</rdfs:label>
+    <rdfs:domain rdf:resource="#Construct"/>
+    <rdfs:range rdf:resource="CreationPattern"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="mode">
+  <rdfs:label>mode in which the results are returned</rdfs:label>
+  <rdfs:domain rdf:resource="#Query" />
+  <rdfs:range rdf:resource="#Mode" />
+  <rdfs:range rdf:resource="#StandardDictionarySampler" />
+</rdf:Property>
+
+<rdf:Property rdf:ID="queryResultSelection">
+  <rdfs:label>the number of results to be returned</rdfs:label>
+  <rdfs:domain rdf:resource="#Query" />
+  <rdfs:range rdf:resource="#QueryResultSelection" />
+</rdf:Property>
+
+<rdf:Property rdf:ID="attributeNodeIdMap">
+	<rdfs:label>a container for pairs of nodeId and attribute names</rdfs:label>
+    <rdfs:domain rdf:resource="#Construct"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="oldNodes">
+	<rdfs:label>a list of old nodes</rdfs:label>
+    <rdfs:domain rdf:resource="#CreationPattern"/>	      
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="newNodes">
+	<rdfs:label>a list of new nodes</rdfs:label>
+    <rdfs:domain rdf:resource="#CreationPattern"/>	      
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="creationPatternRepetitions">
+  <rdfs:label>the number of times that the creation-pattern will be invoked</rdfs:label>
+  <rdfs:domain rdf:resource="#CreationPattern" />
+  <rdfs:range rdf:resource="#PatternRepeatMode" />
+</rdf:Property>
+
+<rdf:Property rdf:ID="rangeDistribution">
+  <rdfs:label>a distribution function to be used for selecting a value from the range</rdfs:label>
+  <rdfs:domain rdf:resource="#SelectRange" />
+  <rdfs:domain rdf:resource="#RepeatRange" />
+  <rdfs:range rdf:resource="DistributionFunction"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="edges">
+	<rdfs:label>a list of nodes</rdfs:label>
+    <rdfs:domain rdf:resource="#Node"/>	      
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="attributeDynamicVarsMap">
+	<rdfs:label>a container for pairs of attributes and dynamic temp variable names</rdfs:label>
+    <rdfs:domain rdf:resource="#Construct"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Property>
+
+<!-- ################################## LITERAL PROPERTIES  ################################## -->
+
+<rdf:Property rdf:ID="sparqlQuery">
+  <rdfs:label>a sparql string query</rdfs:label>
+  <rdfs:domain rdf:resource="#Query" />
+  <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="isDynamic">
+  <rdfs:label>is the sparql query is dynamic - has dynamic variables</rdfs:label>
+  <rdfs:domain rdf:resource="#Query" />
+  <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="constValue">
+  <rdfs:label>natural number value</rdfs:label>
+  <rdfs:domain rdf:resource="#SelectConst" />
+  <rdfs:domain rdf:resource="#RepeatConst" />
+  <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="minValue">
+  <rdfs:label>natural number value - represents minimum</rdfs:label>
+  <rdfs:domain rdf:resource="#SelectRange" />
+  <rdfs:domain rdf:resource="#RepeatRange" />
+  <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="maxValue">
+  <rdfs:label>natural number value - represents maximum</rdfs:label>
+  <rdfs:domain rdf:resource="#SelectRange" />
+  <rdfs:domain rdf:resource="#RepeatRange" />
+  <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="id">
+  <rdfs:label>natural number value - represents nodeId</rdfs:label>
+  <rdfs:domain rdf:resource="#MapPair" />
+  <rdfs:domain rdf:resource="#Node" />
+  <rdfs:domain rdf:resource="#Edge" />
+  <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="type">
+  <rdfs:label>the type of the node</rdfs:label>
+  <rdfs:domain rdf:resource="#Node" />
+  <rdfs:domain rdf:resource="#Edge" />
+  <rdfs:domain rdf:resource="#DictionarySampler" />
+  <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="alias">
+  <rdfs:label>the alias name of a namespace</rdfs:label>
+  <rdfs:domain rdf:resource="#AliasNsPair" />
+  <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="nameSpace">
+  <rdfs:label>the namespace of the type</rdfs:label>
+  <rdfs:domain rdf:resource="#AliasNsPair" />
+  <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="pointsToNodeId">
+  <rdfs:label>natural number value - represents nodeId</rdfs:label>
+  <rdfs:domain rdf:resource="#Edge" />
+  <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="attributeName">
+  <rdfs:label>string value - represents the attribute-name</rdfs:label>
+  <rdfs:domain rdf:resource="#MapPair" />
+  <rdfs:domain rdf:resource="#AttVarPair" />
+  <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="variableName">
+  <rdfs:label>string value - represents the temp variable that will be replaced</rdfs:label>
+  <rdfs:domain rdf:resource="#AttVarPair" />
+  <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="source">
+  <rdfs:label>a source file for d-sampler</rdfs:label>
+  <rdfs:domain rdf:resource="#DictionarySampler" />
+  <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="label">
+  <rdfs:label>a base lavbel for counter d-sampler</rdfs:label>
+  <rdfs:domain rdf:resource="#DictionarySampler" />
+  <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+</rdf:Property>
+
+</rdf:RDF>
+

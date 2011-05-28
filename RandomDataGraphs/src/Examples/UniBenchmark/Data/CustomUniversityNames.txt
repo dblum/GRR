@@ -1,0 +1,7 @@
+	
+// List of universities
+
+HUJI;52%
+CMU;10%
+USF;22%
+TAU;16%

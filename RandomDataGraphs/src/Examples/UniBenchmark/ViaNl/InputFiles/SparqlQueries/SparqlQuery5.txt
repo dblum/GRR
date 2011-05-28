@@ -1,0 +1,5 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX ub: <file:///c:/Main%20Folder/Uni/Sixth%20Year/Semester%20B/DB%20Lab/RandomDataGraphs/src/Examples/UniBenchmark/Data/UniBenchRdfSchema.rdf#> 
+SELECT ?Var16 
+WHERE { ?Var16 rdf:type ub:Department .  } 

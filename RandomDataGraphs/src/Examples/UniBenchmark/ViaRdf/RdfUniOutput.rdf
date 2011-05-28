@@ -1,0 +1,108 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ns="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#"
+    xmlns:rdfGen="http://www.cs.huji.ac.il/~danieb12/RdfGeneratorSchema.rdf#" > 
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department13">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department29">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department15">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department22">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department20">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department10">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department7">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department5">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department25">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department19">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department1">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department3">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department12">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department27">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department17">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department23">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department28">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department14">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department21">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department18">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department0">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department24">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department9">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department26">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department/Department2">
+    <rdf:type rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#Department"/>
+    <ns:subOrganizationOf rdf:resource="http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#University/HUJI"/>
+  </rdf:Description>
+</rdf:RDF>

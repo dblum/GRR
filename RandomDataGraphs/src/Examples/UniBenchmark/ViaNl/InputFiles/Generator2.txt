@@ -1,0 +1,10 @@
+namespace ub: <http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#>
+
+create 1 { ub:University }
+
+for each { ub:University } create 15-25 { ub:Department } connect { ub:Department ub:subOrganization ub:University }
+
+for each { ub:Department } create 7-10 { ub:FullProfessor } connect { ub:FullProfessor ub:worksFor ub:Department }
+for each { ub:Department } create 10-14 { ub:AssociateProfessor } connect { ub:AssociateProfessor ub:worksFor ub:Department }
+for each { ub:Department } create 8-11 { ub:AssistantProfessor } connect { ub:AssistantProfessor ub:worksFor ub:Department }
+for each { ub:Department } create 5-7 { ub:Lecturer }  connect { ub:Lecturer ub:worksFor ub:Department }

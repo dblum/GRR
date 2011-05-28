@@ -1,0 +1,974 @@
+<?xml version="1.0"?> 
+<rdf:RDF 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:rdfGen="http://www.cs.huji.ac.il/~danieb12/RdfGeneratorSchema.rdf#"> 
+	<rdfGen:SamplerFunction>
+		<rdfGen:typeDictionaryMappings>
+			<rdf:Bag>
+				<rdf:li>
+					<rdfGen:CounterDictionarySampler>
+						<rdfGen:type>ub:University</rdfGen:type>
+						<rdfGen:mode>
+							<rdfGen:GlobalDistinctMode />
+						</rdfGen:mode>
+						<rdfGen:label>University</rdfGen:label>
+					</rdfGen:CounterDictionarySampler>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:CounterDictionarySampler>
+						<rdfGen:type>ub:Department</rdfGen:type>
+						<rdfGen:mode>
+							<rdfGen:GlobalDistinctMode />
+						</rdfGen:mode>
+						<rdfGen:label>Department</rdfGen:label>
+					</rdfGen:CounterDictionarySampler>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:CounterDictionarySampler>
+						<rdfGen:type>ub:FullProfessor</rdfGen:type>
+						<rdfGen:mode>
+							<rdfGen:GlobalDistinctMode />
+						</rdfGen:mode>
+						<rdfGen:label>FullProfessor</rdfGen:label>
+					</rdfGen:CounterDictionarySampler>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:CounterDictionarySampler>
+						<rdfGen:type>ub:AssociateProfessor</rdfGen:type>
+						<rdfGen:mode>
+							<rdfGen:GlobalDistinctMode />
+						</rdfGen:mode>
+						<rdfGen:label>AssociateProfessor</rdfGen:label>
+					</rdfGen:CounterDictionarySampler>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:CounterDictionarySampler>
+						<rdfGen:type>ub:AssistantProfessor</rdfGen:type>
+						<rdfGen:mode>
+							<rdfGen:GlobalDistinctMode />
+						</rdfGen:mode>
+						<rdfGen:label>AssistantProfessor</rdfGen:label>
+					</rdfGen:CounterDictionarySampler>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:CounterDictionarySampler>
+						<rdfGen:type>ub:Lecturer</rdfGen:type>
+						<rdfGen:mode>
+							<rdfGen:GlobalDistinctMode />
+						</rdfGen:mode>
+						<rdfGen:label>Lecturer</rdfGen:label>
+					</rdfGen:CounterDictionarySampler>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:CounterDictionarySampler>
+						<rdfGen:type>ub:Course</rdfGen:type>
+						<rdfGen:mode>
+							<rdfGen:GlobalDistinctMode />
+						</rdfGen:mode>
+						<rdfGen:label>Course</rdfGen:label>
+					</rdfGen:CounterDictionarySampler>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:CounterDictionarySampler>
+						<rdfGen:type>ub:GraduateCourse</rdfGen:type>
+						<rdfGen:mode>
+							<rdfGen:GlobalDistinctMode />
+						</rdfGen:mode>
+						<rdfGen:label>GraduateCourse</rdfGen:label>
+					</rdfGen:CounterDictionarySampler>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:CounterDictionarySampler>
+						<rdfGen:type>ub:ResearchGroup</rdfGen:type>
+						<rdfGen:mode>
+							<rdfGen:GlobalDistinctMode />
+						</rdfGen:mode>
+						<rdfGen:label>ResearchGroup</rdfGen:label>
+					</rdfGen:CounterDictionarySampler>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:CounterDictionarySampler>
+						<rdfGen:type>ub:UndergraduateStudent</rdfGen:type>
+						<rdfGen:mode>
+							<rdfGen:GlobalDistinctMode />
+						</rdfGen:mode>
+						<rdfGen:label>UndergraduateStudent</rdfGen:label>
+					</rdfGen:CounterDictionarySampler>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:CounterDictionarySampler>
+						<rdfGen:type>ub:GraduateStudent</rdfGen:type>
+						<rdfGen:mode>
+							<rdfGen:GlobalDistinctMode />
+						</rdfGen:mode>
+						<rdfGen:label>GraduateStudent</rdfGen:label>
+					</rdfGen:CounterDictionarySampler>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:CounterDictionarySampler>
+						<rdfGen:type>ub:Publication</rdfGen:type>
+						<rdfGen:mode>
+							<rdfGen:GlobalDistinctMode />
+						</rdfGen:mode>
+						<rdfGen:label>Publication</rdfGen:label>
+					</rdfGen:CounterDictionarySampler>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:CounterDictionarySampler>
+						<rdfGen:type>ub:Person</rdfGen:type>
+						<rdfGen:mode>
+							<rdfGen:GlobalDistinctMode />
+						</rdfGen:mode>
+						<rdfGen:label>Person</rdfGen:label>
+					</rdfGen:CounterDictionarySampler>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:CounterDictionarySampler>
+						<rdfGen:type>ub:researchInterest</rdfGen:type>
+						<rdfGen:mode>
+							<rdfGen:GlobalDistinctMode />
+						</rdfGen:mode>
+						<rdfGen:label>researchInterest</rdfGen:label>
+					</rdfGen:CounterDictionarySampler>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:CounterDictionarySampler>
+						<rdfGen:type>ub:officeNumber</rdfGen:type>
+						<rdfGen:mode>
+							<rdfGen:GlobalDistinctMode />
+						</rdfGen:mode>
+						<rdfGen:label>officeNumber</rdfGen:label>
+					</rdfGen:CounterDictionarySampler>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:ExternalConstDictionarySampler>
+						<rdfGen:type>ub:name</rdfGen:type>
+					</rdfGen:ExternalConstDictionarySampler>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:ConstDictionarySampler>
+						<rdfGen:type>ub:emailAddress</rdfGen:type>
+						<rdfGen:label>xxx@yyy.com</rdfGen:label>
+					</rdfGen:ConstDictionarySampler>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:ConstDictionarySampler>
+						<rdfGen:type>ub:telephone</rdfGen:type>
+						<rdfGen:label>xxx-yyy-zzzz</rdfGen:label>
+					</rdfGen:ConstDictionarySampler>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:ConstDictionarySampler>
+						<rdfGen:type>ub:age</rdfGen:type>
+						<rdfGen:label>xx</rdfGen:label>
+					</rdfGen:ConstDictionarySampler>
+				</rdf:li>
+			</rdf:Bag>
+		</rdfGen:typeDictionaryMappings>
+	</rdfGen:SamplerFunction>
+	<rdfGen:TypePropertiesMappings>
+		<rdfGen:typePropertiesMappings>
+			<rdf:Bag>
+				<rdf:li>
+					<rdfGen:TypePropsPair>
+						<rdfGen:type>ub:University </rdfGen:type>
+						<rdfGen:propertiesList>
+							<rdf:Bag>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:name</rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+							</rdf:Bag>
+						</rdfGen:propertiesList>
+					</rdfGen:TypePropsPair>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:TypePropsPair>
+						<rdfGen:type>ub:Department </rdfGen:type>
+						<rdfGen:propertiesList>
+							<rdf:Bag>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:name</rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+							</rdf:Bag>
+						</rdfGen:propertiesList>
+					</rdfGen:TypePropsPair>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:TypePropsPair>
+						<rdfGen:type>ub:FullProfessor </rdfGen:type>
+						<rdfGen:propertiesList>
+							<rdf:Bag>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:name </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:emailAddress </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:telephone </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:researchInterest </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:officeNumber </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:age</rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+							</rdf:Bag>
+						</rdfGen:propertiesList>
+					</rdfGen:TypePropsPair>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:TypePropsPair>
+						<rdfGen:type>ub:AssociateProfessor </rdfGen:type>
+						<rdfGen:propertiesList>
+							<rdf:Bag>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:name </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:emailAddress </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:telephone </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:researchInterest </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:officeNumber </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:age</rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+							</rdf:Bag>
+						</rdfGen:propertiesList>
+					</rdfGen:TypePropsPair>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:TypePropsPair>
+						<rdfGen:type>ub:AssistantProfessor </rdfGen:type>
+						<rdfGen:propertiesList>
+							<rdf:Bag>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:name </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:emailAddress </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:telephone </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:researchInterest </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:officeNumber </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:age</rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+							</rdf:Bag>
+						</rdfGen:propertiesList>
+					</rdfGen:TypePropsPair>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:TypePropsPair>
+						<rdfGen:type>ub:Lecturer </rdfGen:type>
+						<rdfGen:propertiesList>
+							<rdf:Bag>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:name </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:emailAddress </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:telephone </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:age</rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+							</rdf:Bag>
+						</rdfGen:propertiesList>
+					</rdfGen:TypePropsPair>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:TypePropsPair>
+						<rdfGen:type>ub:Course </rdfGen:type>
+						<rdfGen:propertiesList>
+							<rdf:Bag>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:name</rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+							</rdf:Bag>
+						</rdfGen:propertiesList>
+					</rdfGen:TypePropsPair>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:TypePropsPair>
+						<rdfGen:type>ub:GraduateCourse </rdfGen:type>
+						<rdfGen:propertiesList>
+							<rdf:Bag>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:name</rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+							</rdf:Bag>
+						</rdfGen:propertiesList>
+					</rdfGen:TypePropsPair>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:TypePropsPair>
+						<rdfGen:type>ub:ResearchGroup </rdfGen:type>
+						<rdfGen:propertiesList>
+							<rdf:Bag>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:name</rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+							</rdf:Bag>
+						</rdfGen:propertiesList>
+					</rdfGen:TypePropsPair>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:TypePropsPair>
+						<rdfGen:type>ub:UndergraduateStudent </rdfGen:type>
+						<rdfGen:propertiesList>
+							<rdf:Bag>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:name </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:emailAddress </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:telephone </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:age</rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+							</rdf:Bag>
+						</rdfGen:propertiesList>
+					</rdfGen:TypePropsPair>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:TypePropsPair>
+						<rdfGen:type>ub:GraduateStudent </rdfGen:type>
+						<rdfGen:propertiesList>
+							<rdf:Bag>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:name </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:emailAddress </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:telephone </rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:age</rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+							</rdf:Bag>
+						</rdfGen:propertiesList>
+					</rdfGen:TypePropsPair>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:TypePropsPair>
+						<rdfGen:type>ub:Publication </rdfGen:type>
+						<rdfGen:propertiesList>
+							<rdf:Bag>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type> ub:name</rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+							</rdf:Bag>
+						</rdfGen:propertiesList>
+					</rdfGen:TypePropsPair>
+				</rdf:li>
+			</rdf:Bag>
+		</rdfGen:typePropertiesMappings>
+	</rdfGen:TypePropertiesMappings>
+	<rdfGen:NameSpaceMappings>
+		<rdfGen:aliasNsMappings>
+			<rdf:Bag>
+				<rdf:li>
+					<rdfGen:AliasNsPair>
+						<rdfGen:alias>ub:</rdfGen:alias>
+						<rdfGen:nameSpace>file:///c:/Main%20Folder/Uni/Sixth%20Year/Semester%20B/DB%20Lab/RandomDataGraphs/src/Examples/UniBenchmark/Data/UniBenchRdfSchema.rdf#</rdfGen:nameSpace>
+					</rdfGen:AliasNsPair>
+				</rdf:li>
+			</rdf:Bag>
+		</rdfGen:aliasNsMappings>
+	</rdfGen:NameSpaceMappings>
+	<rdfGen:GraphCreator>
+		<rdfGen:constructList>
+			<rdf:Seq>
+				<rdf:li>
+					<rdfGen:Construct>
+						<rdfGen:queries />
+						<rdfGen:attributeNodeIdMap />
+						<rdfGen:attributeDynamicVarsMap />
+						<rdfGen:creationPattern>
+							<rdfGen:CreationPattern>
+								<rdfGen:creationPatternRepetitions>
+									<rdfGen:RepeatConst>
+										<rdfGen:constValue>1</rdfGen:constValue>
+									</rdfGen:RepeatConst>
+								</rdfGen:creationPatternRepetitions>
+								<rdfGen:oldNodes />
+								<rdfGen:newNodes>
+									<rdf:Bag>
+										<rdf:li>
+											<rdfGen:NewNode>
+												<rdfGen:id>0</rdfGen:id>
+												<rdfGen:type>ub:University</rdfGen:type>
+												<rdfGen:edges />
+											</rdfGen:NewNode>
+										</rdf:li>
+									</rdf:Bag>
+								</rdfGen:newNodes>
+							</rdfGen:CreationPattern>
+						</rdfGen:creationPattern>
+					</rdfGen:Construct>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:Construct>
+						<rdfGen:queries>
+							<rdf:Seq>
+								<rdf:li>
+									<rdfGen:Query>
+										<rdfGen:mode>
+											<rdfGen:LocalDistinctMode />
+										</rdfGen:mode>
+										<rdfGen:queryResultSelection>
+											<rdfGen:SelectAll />
+										</rdfGen:queryResultSelection>
+										<rdfGen:sparqlQuery>C:\Main Folder\GRR\RandomDataGraphs\src\Examples\UniBenchmark\ViaNl\InputFiles\SparqlQueries\SparqlQuery0.txt</rdfGen:sparqlQuery>
+										<rdfGen:isDynamic>false</rdfGen:isDynamic>
+									</rdfGen:Query>
+								</rdf:li>
+							</rdf:Seq>
+						</rdfGen:queries>
+						<rdfGen:attributeNodeIdMap>
+							<rdf:Bag>
+								<rdf:li>
+									<rdfGen:MapPair>
+										<rdfGen:id>1</rdfGen:id>
+										<rdfGen:attributeName>?Var1</rdfGen:attributeName>
+									</rdfGen:MapPair>
+								</rdf:li>
+							</rdf:Bag>
+						</rdfGen:attributeNodeIdMap>
+						<rdfGen:attributeDynamicVarsMap />
+						<rdfGen:creationPattern>
+							<rdfGen:CreationPattern>
+								<rdfGen:creationPatternRepetitions>
+									<rdfGen:RepeatRange>
+										<rdfGen:minValue>15</rdfGen:minValue>
+										<rdfGen:maxValue>25</rdfGen:maxValue>
+									</rdfGen:RepeatRange>
+								</rdfGen:creationPatternRepetitions>
+								<rdfGen:oldNodes>
+									<rdf:Bag>
+										<rdf:li>
+											<rdfGen:OldNode>
+												<rdfGen:id>1</rdfGen:id>
+												<rdfGen:type>ub:University</rdfGen:type>
+												<rdfGen:edges />
+											</rdfGen:OldNode>
+										</rdf:li>
+									</rdf:Bag>
+								</rdfGen:oldNodes>
+								<rdfGen:newNodes>
+									<rdf:Bag>
+										<rdf:li>
+											<rdfGen:NewNode>
+												<rdfGen:id>2</rdfGen:id>
+												<rdfGen:type>ub:Department</rdfGen:type>
+											<rdfGen:edges>
+												<rdf:Bag>
+													<rdf:li>
+														<rdfGen:Edge>
+															<rdfGen:id>3</rdfGen:id>
+															<rdfGen:type>ub:subOrganization</rdfGen:type>
+															<rdfGen:pointsToNodeId>1</rdfGen:pointsToNodeId>
+														</rdfGen:Edge>
+													</rdf:li>
+												</rdf:Bag>
+											</rdfGen:edges>
+											</rdfGen:NewNode>
+										</rdf:li>
+									</rdf:Bag>
+								</rdfGen:newNodes>
+							</rdfGen:CreationPattern>
+						</rdfGen:creationPattern>
+					</rdfGen:Construct>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:Construct>
+						<rdfGen:queries>
+							<rdf:Seq>
+								<rdf:li>
+									<rdfGen:Query>
+										<rdfGen:mode>
+											<rdfGen:LocalDistinctMode />
+										</rdfGen:mode>
+										<rdfGen:queryResultSelection>
+											<rdfGen:SelectAll />
+										</rdfGen:queryResultSelection>
+										<rdfGen:sparqlQuery>C:\Main Folder\GRR\RandomDataGraphs\src\Examples\UniBenchmark\ViaNl\InputFiles\SparqlQueries\SparqlQuery1.txt</rdfGen:sparqlQuery>
+										<rdfGen:isDynamic>false</rdfGen:isDynamic>
+									</rdfGen:Query>
+								</rdf:li>
+							</rdf:Seq>
+						</rdfGen:queries>
+						<rdfGen:attributeNodeIdMap>
+							<rdf:Bag>
+								<rdf:li>
+									<rdfGen:MapPair>
+										<rdfGen:id>4</rdfGen:id>
+										<rdfGen:attributeName>?Var4</rdfGen:attributeName>
+									</rdfGen:MapPair>
+								</rdf:li>
+							</rdf:Bag>
+						</rdfGen:attributeNodeIdMap>
+						<rdfGen:attributeDynamicVarsMap />
+						<rdfGen:creationPattern>
+							<rdfGen:CreationPattern>
+								<rdfGen:creationPatternRepetitions>
+									<rdfGen:RepeatRange>
+										<rdfGen:minValue>7</rdfGen:minValue>
+										<rdfGen:maxValue>10</rdfGen:maxValue>
+									</rdfGen:RepeatRange>
+								</rdfGen:creationPatternRepetitions>
+								<rdfGen:oldNodes>
+									<rdf:Bag>
+										<rdf:li>
+											<rdfGen:OldNode>
+												<rdfGen:id>4</rdfGen:id>
+												<rdfGen:type>ub:Department</rdfGen:type>
+												<rdfGen:edges />
+											</rdfGen:OldNode>
+										</rdf:li>
+									</rdf:Bag>
+								</rdfGen:oldNodes>
+								<rdfGen:newNodes>
+									<rdf:Bag>
+										<rdf:li>
+											<rdfGen:NewNode>
+												<rdfGen:id>5</rdfGen:id>
+												<rdfGen:type>ub:FullProfessor</rdfGen:type>
+											<rdfGen:edges>
+												<rdf:Bag>
+													<rdf:li>
+														<rdfGen:Edge>
+															<rdfGen:id>6</rdfGen:id>
+															<rdfGen:type>ub:worksFor</rdfGen:type>
+															<rdfGen:pointsToNodeId>4</rdfGen:pointsToNodeId>
+														</rdfGen:Edge>
+													</rdf:li>
+												</rdf:Bag>
+											</rdfGen:edges>
+											</rdfGen:NewNode>
+										</rdf:li>
+									</rdf:Bag>
+								</rdfGen:newNodes>
+							</rdfGen:CreationPattern>
+						</rdfGen:creationPattern>
+					</rdfGen:Construct>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:Construct>
+						<rdfGen:queries>
+							<rdf:Seq>
+								<rdf:li>
+									<rdfGen:Query>
+										<rdfGen:mode>
+											<rdfGen:LocalDistinctMode />
+										</rdfGen:mode>
+										<rdfGen:queryResultSelection>
+											<rdfGen:SelectAll />
+										</rdfGen:queryResultSelection>
+										<rdfGen:sparqlQuery>C:\Main Folder\GRR\RandomDataGraphs\src\Examples\UniBenchmark\ViaNl\InputFiles\SparqlQueries\SparqlQuery2.txt</rdfGen:sparqlQuery>
+										<rdfGen:isDynamic>false</rdfGen:isDynamic>
+									</rdfGen:Query>
+								</rdf:li>
+							</rdf:Seq>
+						</rdfGen:queries>
+						<rdfGen:attributeNodeIdMap>
+							<rdf:Bag>
+								<rdf:li>
+									<rdfGen:MapPair>
+										<rdfGen:id>7</rdfGen:id>
+										<rdfGen:attributeName>?Var7</rdfGen:attributeName>
+									</rdfGen:MapPair>
+								</rdf:li>
+							</rdf:Bag>
+						</rdfGen:attributeNodeIdMap>
+						<rdfGen:attributeDynamicVarsMap />
+						<rdfGen:creationPattern>
+							<rdfGen:CreationPattern>
+								<rdfGen:creationPatternRepetitions>
+									<rdfGen:RepeatRange>
+										<rdfGen:minValue>10</rdfGen:minValue>
+										<rdfGen:maxValue>14</rdfGen:maxValue>
+									</rdfGen:RepeatRange>
+								</rdfGen:creationPatternRepetitions>
+								<rdfGen:oldNodes>
+									<rdf:Bag>
+										<rdf:li>
+											<rdfGen:OldNode>
+												<rdfGen:id>7</rdfGen:id>
+												<rdfGen:type>ub:Department</rdfGen:type>
+												<rdfGen:edges />
+											</rdfGen:OldNode>
+										</rdf:li>
+									</rdf:Bag>
+								</rdfGen:oldNodes>
+								<rdfGen:newNodes>
+									<rdf:Bag>
+										<rdf:li>
+											<rdfGen:NewNode>
+												<rdfGen:id>8</rdfGen:id>
+												<rdfGen:type>ub:AssociateProfessor</rdfGen:type>
+											<rdfGen:edges>
+												<rdf:Bag>
+													<rdf:li>
+														<rdfGen:Edge>
+															<rdfGen:id>9</rdfGen:id>
+															<rdfGen:type>ub:worksFor</rdfGen:type>
+															<rdfGen:pointsToNodeId>7</rdfGen:pointsToNodeId>
+														</rdfGen:Edge>
+													</rdf:li>
+												</rdf:Bag>
+											</rdfGen:edges>
+											</rdfGen:NewNode>
+										</rdf:li>
+									</rdf:Bag>
+								</rdfGen:newNodes>
+							</rdfGen:CreationPattern>
+						</rdfGen:creationPattern>
+					</rdfGen:Construct>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:Construct>
+						<rdfGen:queries>
+							<rdf:Seq>
+								<rdf:li>
+									<rdfGen:Query>
+										<rdfGen:mode>
+											<rdfGen:LocalDistinctMode />
+										</rdfGen:mode>
+										<rdfGen:queryResultSelection>
+											<rdfGen:SelectAll />
+										</rdfGen:queryResultSelection>
+										<rdfGen:sparqlQuery>C:\Main Folder\GRR\RandomDataGraphs\src\Examples\UniBenchmark\ViaNl\InputFiles\SparqlQueries\SparqlQuery3.txt</rdfGen:sparqlQuery>
+										<rdfGen:isDynamic>false</rdfGen:isDynamic>
+									</rdfGen:Query>
+								</rdf:li>
+							</rdf:Seq>
+						</rdfGen:queries>
+						<rdfGen:attributeNodeIdMap>
+							<rdf:Bag>
+								<rdf:li>
+									<rdfGen:MapPair>
+										<rdfGen:id>10</rdfGen:id>
+										<rdfGen:attributeName>?Var10</rdfGen:attributeName>
+									</rdfGen:MapPair>
+								</rdf:li>
+							</rdf:Bag>
+						</rdfGen:attributeNodeIdMap>
+						<rdfGen:attributeDynamicVarsMap />
+						<rdfGen:creationPattern>
+							<rdfGen:CreationPattern>
+								<rdfGen:creationPatternRepetitions>
+									<rdfGen:RepeatRange>
+										<rdfGen:minValue>8</rdfGen:minValue>
+										<rdfGen:maxValue>11</rdfGen:maxValue>
+									</rdfGen:RepeatRange>
+								</rdfGen:creationPatternRepetitions>
+								<rdfGen:oldNodes>
+									<rdf:Bag>
+										<rdf:li>
+											<rdfGen:OldNode>
+												<rdfGen:id>10</rdfGen:id>
+												<rdfGen:type>ub:Department</rdfGen:type>
+												<rdfGen:edges />
+											</rdfGen:OldNode>
+										</rdf:li>
+									</rdf:Bag>
+								</rdfGen:oldNodes>
+								<rdfGen:newNodes>
+									<rdf:Bag>
+										<rdf:li>
+											<rdfGen:NewNode>
+												<rdfGen:id>11</rdfGen:id>
+												<rdfGen:type>ub:AssistantProfessor</rdfGen:type>
+											<rdfGen:edges>
+												<rdf:Bag>
+													<rdf:li>
+														<rdfGen:Edge>
+															<rdfGen:id>12</rdfGen:id>
+															<rdfGen:type>ub:worksFor</rdfGen:type>
+															<rdfGen:pointsToNodeId>10</rdfGen:pointsToNodeId>
+														</rdfGen:Edge>
+													</rdf:li>
+												</rdf:Bag>
+											</rdfGen:edges>
+											</rdfGen:NewNode>
+										</rdf:li>
+									</rdf:Bag>
+								</rdfGen:newNodes>
+							</rdfGen:CreationPattern>
+						</rdfGen:creationPattern>
+					</rdfGen:Construct>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:Construct>
+						<rdfGen:queries>
+							<rdf:Seq>
+								<rdf:li>
+									<rdfGen:Query>
+										<rdfGen:mode>
+											<rdfGen:LocalDistinctMode />
+										</rdfGen:mode>
+										<rdfGen:queryResultSelection>
+											<rdfGen:SelectAll />
+										</rdfGen:queryResultSelection>
+										<rdfGen:sparqlQuery>C:\Main Folder\GRR\RandomDataGraphs\src\Examples\UniBenchmark\ViaNl\InputFiles\SparqlQueries\SparqlQuery4.txt</rdfGen:sparqlQuery>
+										<rdfGen:isDynamic>false</rdfGen:isDynamic>
+									</rdfGen:Query>
+								</rdf:li>
+							</rdf:Seq>
+						</rdfGen:queries>
+						<rdfGen:attributeNodeIdMap>
+							<rdf:Bag>
+								<rdf:li>
+									<rdfGen:MapPair>
+										<rdfGen:id>13</rdfGen:id>
+										<rdfGen:attributeName>?Var13</rdfGen:attributeName>
+									</rdfGen:MapPair>
+								</rdf:li>
+							</rdf:Bag>
+						</rdfGen:attributeNodeIdMap>
+						<rdfGen:attributeDynamicVarsMap />
+						<rdfGen:creationPattern>
+							<rdfGen:CreationPattern>
+								<rdfGen:creationPatternRepetitions>
+									<rdfGen:RepeatRange>
+										<rdfGen:minValue>5</rdfGen:minValue>
+										<rdfGen:maxValue>7</rdfGen:maxValue>
+									</rdfGen:RepeatRange>
+								</rdfGen:creationPatternRepetitions>
+								<rdfGen:oldNodes>
+									<rdf:Bag>
+										<rdf:li>
+											<rdfGen:OldNode>
+												<rdfGen:id>13</rdfGen:id>
+												<rdfGen:type>ub:Department</rdfGen:type>
+												<rdfGen:edges />
+											</rdfGen:OldNode>
+										</rdf:li>
+									</rdf:Bag>
+								</rdfGen:oldNodes>
+								<rdfGen:newNodes>
+									<rdf:Bag>
+										<rdf:li>
+											<rdfGen:NewNode>
+												<rdfGen:id>14</rdfGen:id>
+												<rdfGen:type>ub:Lecturer</rdfGen:type>
+											<rdfGen:edges>
+												<rdf:Bag>
+													<rdf:li>
+														<rdfGen:Edge>
+															<rdfGen:id>15</rdfGen:id>
+															<rdfGen:type>ub:worksFor</rdfGen:type>
+															<rdfGen:pointsToNodeId>13</rdfGen:pointsToNodeId>
+														</rdfGen:Edge>
+													</rdf:li>
+												</rdf:Bag>
+											</rdfGen:edges>
+											</rdfGen:NewNode>
+										</rdf:li>
+									</rdf:Bag>
+								</rdfGen:newNodes>
+							</rdfGen:CreationPattern>
+						</rdfGen:creationPattern>
+					</rdfGen:Construct>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:Construct>
+						<rdfGen:queries>
+							<rdf:Seq>
+								<rdf:li>
+									<rdfGen:Query>
+										<rdfGen:mode>
+											<rdfGen:LocalDistinctMode />
+										</rdfGen:mode>
+										<rdfGen:queryResultSelection>
+											<rdfGen:SelectAll />
+										</rdfGen:queryResultSelection>
+										<rdfGen:sparqlQuery>C:\Main Folder\GRR\RandomDataGraphs\src\Examples\UniBenchmark\ViaNl\InputFiles\SparqlQueries\SparqlQuery5.txt</rdfGen:sparqlQuery>
+										<rdfGen:isDynamic>false</rdfGen:isDynamic>
+									</rdfGen:Query>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Query>
+										<rdfGen:mode>
+											<rdfGen:LocalDistinctMode />
+										</rdfGen:mode>
+										<rdfGen:queryResultSelection>
+											<rdfGen:SelectConst>
+												<rdfGen:constValue>1</rdfGen:constValue>
+											</rdfGen:SelectConst>
+										</rdfGen:queryResultSelection>
+										<rdfGen:sparqlQuery>C:\Main Folder\GRR\RandomDataGraphs\src\Examples\UniBenchmark\ViaNl\InputFiles\SparqlQueries\SparqlQuery6.txt</rdfGen:sparqlQuery>
+										<rdfGen:isDynamic>true</rdfGen:isDynamic>
+									</rdfGen:Query>
+								</rdf:li>
+							</rdf:Seq>
+						</rdfGen:queries>
+						<rdfGen:attributeNodeIdMap>
+							<rdf:Bag>
+								<rdf:li>
+									<rdfGen:MapPair>
+										<rdfGen:id>16</rdfGen:id>
+										<rdfGen:attributeName>?Var16</rdfGen:attributeName>
+									</rdfGen:MapPair>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:MapPair>
+										<rdfGen:id>17</rdfGen:id>
+										<rdfGen:attributeName>?Var17</rdfGen:attributeName>
+									</rdfGen:MapPair>
+								</rdf:li>
+							</rdf:Bag>
+						</rdfGen:attributeNodeIdMap>
+						<rdfGen:attributeDynamicVarsMap>
+							<rdf:Bag>
+								<rdf:li>
+									<rdfGen:AttVarPair>
+										<rdfGen:attributeName>?Var16</rdfGen:attributeName>
+										<rdfGen:variableName>@var0</rdfGen:variableName>
+									</rdfGen:AttVarPair>
+								</rdf:li>
+							</rdf:Bag>
+						</rdfGen:attributeDynamicVarsMap>
+						<rdfGen:creationPattern>
+							<rdfGen:CreationPattern>
+								<rdfGen:creationPatternRepetitions>
+									<rdfGen:RepeatConst>
+										<rdfGen:constValue>1</rdfGen:constValue>
+									</rdfGen:RepeatConst>
+								</rdfGen:creationPatternRepetitions>
+								<rdfGen:oldNodes>
+									<rdf:Bag>
+										<rdf:li>
+											<rdfGen:OldNode>
+												<rdfGen:id>16</rdfGen:id>
+												<rdfGen:type>ub:Department</rdfGen:type>
+												<rdfGen:edges />
+											</rdfGen:OldNode>
+										</rdf:li>
+										<rdf:li>
+											<rdfGen:OldNode>
+												<rdfGen:id>17</rdfGen:id>
+												<rdfGen:type>ub:Department</rdfGen:type>
+											<rdfGen:edges>
+												<rdf:Bag>
+													<rdf:li>
+														<rdfGen:Edge>
+															<rdfGen:id>18</rdfGen:id>
+															<rdfGen:type>ub:headOf</rdfGen:type>
+															<rdfGen:pointsToNodeId>16</rdfGen:pointsToNodeId>
+														</rdfGen:Edge>
+													</rdf:li>
+												</rdf:Bag>
+											</rdfGen:edges>
+											</rdfGen:OldNode>
+										</rdf:li>
+									</rdf:Bag>
+								</rdfGen:oldNodes>
+								<rdfGen:newNodes />
+							</rdfGen:CreationPattern>
+						</rdfGen:creationPattern>
+					</rdfGen:Construct>
+				</rdf:li>
+			</rdf:Seq>
+		</rdfGen:constructList>
+	</rdfGen:GraphCreator>
+
+</rdf:RDF>

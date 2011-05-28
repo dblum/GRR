@@ -1,0 +1,13 @@
+ub:University ; ub:name
+ub:Department ; ub:name
+ub:FullProfessor ; ub:name ; ub:emailAddress ; ub:telephone ; ub:researchInterest ; ub:officeNumber ; ub:age
+ub:AssociateProfessor ; ub:name ; ub:emailAddress ; ub:telephone ; ub:researchInterest ; ub:officeNumber ; ub:age
+ub:AssistantProfessor ; ub:name ; ub:emailAddress ; ub:telephone ; ub:researchInterest ; ub:officeNumber ; ub:age
+ub:Lecturer ; ub:name ; ub:emailAddress ; ub:telephone ; ub:age
+ub:Course ; ub:name
+ub:GraduateCourse ; ub:name
+ub:ResearchGroup ; ub:name
+ub:UndergraduateStudent ; ub:name ; ub:emailAddress ; ub:telephone ; ub:age
+ub:GraduateStudent ; ub:name ; ub:emailAddress ; ub:telephone ; ub:age
+ub:Publication ; ub:name
+

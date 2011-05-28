@@ -1,0 +1,183 @@
+<?xml version="1.0"?> 
+<rdf:RDF 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:rdfGen="http://www.cs.huji.ac.il/~danieb12/RdfGeneratorSchema.rdf#"> <!-- This is mandatory -->
+	
+	<!-- To be added
+	<DataBaseConfig></DataBaseConfig> 
+	 -->
+	<rdfGen:SamplerFunction>
+		<rdfGen:typeDictionaryMappings>
+			<rdf:Bag>
+				<rdf:li>
+					<rdfGen:CustomDictionarySampler> 
+						<rdfGen:type>University</rdfGen:type>
+						<rdfGen:source>C:\Main Folder\Uni\Sixth Year\Semester B\DB Lab\RandomDataGraphs\src\UniBenchmark\Data\UniversityNames.txt</rdfGen:source>
+					</rdfGen:CustomDictionarySampler>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:StandardDictionarySampler>
+						<rdfGen:type>Department</rdfGen:type>
+						<rdfGen:mode>
+							<rdfGen:GlobalDistinctMode />
+						</rdfGen:mode>
+						<rdfGen:source>C:\Main Folder\Uni\Sixth Year\Semester B\DB Lab\RandomDataGraphs\src\UniBenchmark\Data\DepartmentNames.txt</rdfGen:source>
+					</rdfGen:StandardDictionarySampler>
+				</rdf:li>
+			</rdf:Bag>
+		</rdfGen:typeDictionaryMappings>
+	</rdfGen:SamplerFunction>
+	
+	<rdfGen:GraphCreator>
+		<rdfGen:constructList>
+			<rdf:Seq>
+					<rdf:li>
+						<!-- Uni -->
+						<rdfGen:Construct> 
+							<rdfGen:queries />
+							
+							<rdfGen:attributeNodeIdMap />
+							
+							<rdfGen:creationPattern>
+								<rdfGen:CreationPattern>
+									
+									<rdfGen:creationPatternRepetitions>
+										<rdfGen:RepeatConst><rdfGen:constValue>1</rdfGen:constValue></rdfGen:RepeatConst>
+									</rdfGen:creationPatternRepetitions>
+									
+									<rdfGen:oldNodes />
+									
+									<rdfGen:newNodes>
+										<rdf:Bag>
+											<rdf:li>
+												<rdfGen:NewNode>
+													<rdfGen:nameSpace>http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#</rdfGen:nameSpace>
+													<rdfGen:type>University</rdfGen:type>
+													<rdfGen:id>0</rdfGen:id>
+													<rdfGen:edges />
+												</rdfGen:NewNode>
+											</rdf:li>
+										</rdf:Bag>
+									</rdfGen:newNodes>
+									
+								</rdfGen:CreationPattern>
+							</rdfGen:creationPattern>
+						</rdfGen:Construct>
+					</rdf:li>
+					<rdf:li>
+						<!-- Departments -->
+						<rdfGen:Construct> 
+							<rdfGen:queries>
+								<rdf:Seq>
+									<rdf:li>
+										<rdfGen:Query>
+											<rdfGen:mode>
+												<rdfGen:GlobalDistinctMode />
+											</rdfGen:mode>
+											<rdfGen:queryResultSelection>
+												<rdfGen:SelectAll />
+											</rdfGen:queryResultSelection>
+											<rdfGen:sparqlQuery>C:\Main Folder\Uni\Sixth Year\Semester B\DB Lab\RandomDataGraphs\src\RdfApi\Q1.txt</rdfGen:sparqlQuery>
+											<rdfGen:isDynamic>false</rdfGen:isDynamic>
+										</rdfGen:Query>
+									</rdf:li>
+								</rdf:Seq>
+							</rdfGen:queries>
+							
+							<rdfGen:attributeNodeIdMap>
+								<rdf:Bag>
+									<rdf:li>
+										<rdfGen:MapPair>
+											<rdfGen:id>0</rdfGen:id>
+											<rdfGen:attributeName>?Uni</rdfGen:attributeName>
+										</rdfGen:MapPair>
+									</rdf:li>
+								</rdf:Bag>
+							</rdfGen:attributeNodeIdMap>
+							
+							<rdfGen:creationPattern>
+								<rdfGen:CreationPattern>
+									
+									<rdfGen:creationPatternRepetitions>
+										<rdfGen:RepeatRange>
+											<rdfGen:minValue>15</rdfGen:minValue>
+											<rdfGen:maxValue>25</rdfGen:maxValue>
+										</rdfGen:RepeatRange>
+									</rdfGen:creationPatternRepetitions>
+									
+									<rdfGen:oldNodes>
+										<rdf:Bag>
+											<rdf:li>
+												<rdfGen:OldNode>
+													<rdfGen:nameSpace>http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#</rdfGen:nameSpace>
+													<rdfGen:type>University</rdfGen:type>
+													<rdfGen:id>0</rdfGen:id>
+													<rdfGen:edges />
+												</rdfGen:OldNode>
+											</rdf:li>	
+										</rdf:Bag>
+									</rdfGen:oldNodes>
+									<rdfGen:newNodes>
+										<rdf:Bag>
+											<rdf:li>
+												<rdfGen:NewNode>
+													<rdfGen:nameSpace>http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#</rdfGen:nameSpace>
+													<rdfGen:type>Department</rdfGen:type>
+													<rdfGen:id>1</rdfGen:id>
+													<rdfGen:edges>
+														<rdf:Bag>
+															<rdf:li>
+																<rdfGen:Edge>
+																	<rdfGen:id>1</rdfGen:id>
+																	<rdfGen:nameSpace>http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#</rdfGen:nameSpace>
+																	<rdfGen:type>subOrganizationOf</rdfGen:type>
+																	<rdfGen:pointsToNodeId>0</rdfGen:pointsToNodeId>
+																</rdfGen:Edge>
+															</rdf:li>
+														</rdf:Bag>
+													</rdfGen:edges>
+												</rdfGen:NewNode>
+											</rdf:li>
+										</rdf:Bag>
+									</rdfGen:newNodes>
+								</rdfGen:CreationPattern>
+							</rdfGen:creationPattern>
+						</rdfGen:Construct>
+					</rdf:li>
+				</rdf:Seq>
+			</rdfGen:constructList>
+		
+	</rdfGen:GraphCreator>
+	<!-- Faculty Member: Full-Professor -->
+	
+	<!-- Faculty Member: Full-Professor -->
+	<!-- Faculty Member: Associate-Professor -->
+	<!-- Faculty Member: Assistant-Professor -->
+	<!-- Faculty Member: Lecturer -->
+	
+	<!-- Head of Department -->
+		
+	<!-- Courses -->
+	<!-- Grad Courses -->
+	
+	<!-- Student memberOf -->
+	
+	<!-- Advisor for Undergraduate Student -->
+	<!-- Advisor for Graduate Student -->
+	
+	<!-- Courses for Undergraduate Student -->
+	<!-- Courses for Graduate Student -->
+	
+	<!-- Publications: Full-Professor -->
+	<!-- Publications: Associate-Professor -->
+	<!-- Publications: Assistant-Professor -->
+	<!-- Publications: Lecturer -->
+	
+	<!-- Uni Degrees -->
+	
+	<!-- Graduate Student Degree -->
+		
+	
+</rdf:RDF>
+	

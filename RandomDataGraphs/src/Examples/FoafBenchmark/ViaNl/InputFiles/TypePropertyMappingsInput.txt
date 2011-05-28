@@ -1,0 +1,4 @@
+foaf:Person ; foaf:firstName ; foaf:surname ; foaf:title ; foaf:skypeID
+foaf:Project ; foaf:name ; foaf:homepage ; foaf:logo
+
+

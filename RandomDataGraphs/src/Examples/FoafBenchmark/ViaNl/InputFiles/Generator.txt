@@ -1,0 +1,5 @@
+namespace foaf: <http://xmlns.com/foaf/0.1/>
+
+create 2500 { foaf:Person }
+
+for each { foaf:Person ?p1 } for 15-25 { foaf:Person ?p2 } where { FILTER( ?p1 != ?p2 ) } connect { ?p1 foaf:knows ?p2 }

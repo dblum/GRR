@@ -1,0 +1,24 @@
+// Node samplers
+CounterDictionarySampler ; GlobalDistinctMode ; ub:University ; University
+CounterDictionarySampler ; GlobalDistinctMode ; ub:Department ; Department
+CounterDictionarySampler ; GlobalDistinctMode ; ub:FullProfessor ; FullProfessor
+CounterDictionarySampler ; GlobalDistinctMode ; ub:AssociateProfessor ; AssociateProfessor
+CounterDictionarySampler ; GlobalDistinctMode ; ub:AssistantProfessor ; AssistantProfessor
+CounterDictionarySampler ; GlobalDistinctMode ; ub:Lecturer ; Lecturer
+CounterDictionarySampler ; GlobalDistinctMode ; ub:Course ; Course
+CounterDictionarySampler ; GlobalDistinctMode ; ub:GraduateCourse ; GraduateCourse
+CounterDictionarySampler ; GlobalDistinctMode ; ub:ResearchGroup ; ResearchGroup
+CounterDictionarySampler ; GlobalDistinctMode ; ub:UndergraduateStudent ; UndergraduateStudent
+CounterDictionarySampler ; GlobalDistinctMode ; ub:GraduateStudent ; GraduateStudent
+CounterDictionarySampler ; GlobalDistinctMode ; ub:Publication ; Publication
+CounterDictionarySampler ; GlobalDistinctMode ; ub:Person ; Person
+
+// Edge (Property) samplers
+CounterDictionarySampler ; GlobalDistinctMode ; ub:researchInterest ; researchInterest 
+CounterDictionarySampler ; GlobalDistinctMode ; ub:officeNumber ; officeNumber 
+
+ExternalConstDictionarySampler ; ub:name 
+
+ConstDictionarySampler ; ub:emailAddress ; xxx@yyy.com
+ConstDictionarySampler ; ub:telephone ; xxx-yyy-zzzz
+ConstDictionarySampler ; ub:age ; xx

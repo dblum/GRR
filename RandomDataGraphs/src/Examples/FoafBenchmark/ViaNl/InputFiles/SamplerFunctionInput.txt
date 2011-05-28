@@ -1,0 +1,12 @@
+CounterDictionarySampler ; GlobalDistinctMode ; foaf:Person ; Person
+CounterDictionarySampler ; GlobalDistinctMode ; foaf:Project ; Project
+
+CounterDictionarySampler ; GlobalDistinctMode ; foaf:firstName ; firstName
+CounterDictionarySampler ; GlobalDistinctMode ; foaf:surname ; surName
+CounterDictionarySampler ; GlobalDistinctMode ; foaf:skypeID ; skypeID
+CounterDictionarySampler ; GlobalDistinctMode ; foaf:icqChatID ; icqChatID
+CounterDictionarySampler ; GlobalDistinctMode ; foaf:aimChatID ; aimChatID
+CounterDictionarySampler ; GlobalDistinctMode ; foaf:homepage ; homepage
+CounterDictionarySampler ; GlobalDistinctMode ; foaf:logo ; logo
+ConstDictionarySampler ; foaf:title ; Mr
+ExternalConstDictionarySampler ; foaf:name ; 

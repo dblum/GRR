@@ -1,0 +1,35 @@
+//*********************************************************************************************
+// Usage:
+//
+//	(for 
+//		(each | min-max | pmin-pmax | num) 
+//		[with ( global-distinct | local-distinct | repeatable ) repetitions] 
+//		{list of class} 
+//		{list of conditions}? 
+//	)*
+//	(create 
+//		(min-max|num) 
+//		{list of classes}
+//	)?
+//	(connect 
+//		{list of connections}
+//	)?
+//
+//	Notes:
+//		- The first list can appear any number of times.
+//		- The repitition part is optional
+//		- The list of conditions part on the first line is optional
+//		- At least one of the create and connect must appear
+//
+//*********************************************************************************************
+
+//*********************************************************************************************
+// FOAF Implementation:
+//*********************************************************************************************
+
+namespace foaf: <http://xmlns.com/foaf/0.1/>
+
+CREATE 25000 { foaf:Person }
+
+FOR EACH { foaf:Person ?p1 } FOR 15-25 { foaf:Person ?p2 } WHERE { FILTER( ?p1 != ?p2 ) } CONNECT { ?p1 foaf:knows ?p2 }
+

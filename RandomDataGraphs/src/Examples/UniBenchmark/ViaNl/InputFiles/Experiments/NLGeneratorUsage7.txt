@@ -1,0 +1,74 @@
+//*********************************************************************************************
+// Usage:
+//
+//	(for 
+//		(each | min-max | pmin-pmax | num) 
+//		[with ( global-distinct | local-distinct | repeatable ) repetitions] 
+//		{list of class} 
+//		{list of conditions}? 
+//	)*
+//	(create 
+//		(min-max|num) 
+//		{list of classes}
+//	)?
+//	(connect 
+//		{list of connections}
+//	)?
+//
+//	Notes:
+//		- The first list can appear any number of times.
+//		- The repitition part is optional
+//		- The list of conditions part on the first line is optional
+//		- At least one of the create and connect must appear
+//
+//*********************************************************************************************
+
+//*********************************************************************************************
+// Uni-Benchmark Implementation: (repetition part is optional - default would be "Repeatable")
+//*********************************************************************************************
+
+namespace ub: <http://www.cs.huji.ac.il/~danieb12/UniBenchRdfSchema.rdf#> 
+
+create 1 { ub:University }
+
+for each { ub:University } 	create 8 	{ ub:Department }				connect { ub:Department ub:subOrganization ub:University }
+
+for each { ub:Department } 	create 7-10		{ ub:FullProfessor }			connect { ub:FullProfessor ub:worksFor ub:Department }
+for each { ub:Department } 	create 10-14	{ ub:AssociateProfessor }		connect { ub:AssociateProfessor ub:worksFor ub:Department }
+for each { ub:Department } 	create 8-11		{ ub:AssistantProfessor }		connect { ub:AssistantProfessor ub:worksFor ub:Department }
+for each { ub:Department } 	create 5-7		{ ub:Lecturer } 				connect { ub:Lecturer ub:worksFor ub:Department }
+
+// First example in which no new nodes are creted and an for a dynamic set of queries 
+for each { ub:Department } 	for 1 { ub:FullProfessor } { ub:FullProfessor ub:worksFor ub:Department } 	connect { ub:FullProfessor ub:headOf ub:Department }
+
+for each { ub:Faculty } 	create 1-2		{ ub:Course } 					connect { ub:Faculty ub:teacherOf ub:Course }
+for each { ub:Faculty } 	create 1-2		{ ub:GraduateCourse } 			connect { ub:Faculty ub:teacherOf ub:GraduateCourse }
+
+for each { ub:Department } 	create 10-20 	{ ub:ResearchGroup }			connect { ub:ResearchGroup ub:subOrganization ub:Department }
+
+for each { ub:Faculty , ub:Department } { ub:Faculty ub:worksFor ub:Department } 	create 8-14		{ ub:UndergraduateStudent }		connect { ub:UndergraduateStudent ub:memberOf ub:Department }
+for each { ub:Faculty , ub:Department } { ub:Faculty ub:worksFor ub:Department } 	create 3-4		{ ub:GraduateStudent }		connect { ub:GraduateStudent ub:memberOf ub:Department }
+
+// student as assistants part (not clear + schema is missing this part)
+
+for 20%-20% { ub:UndergraduateStudent , ub:Department } { ub:UndergraduateStudent ub:memberOf ub:Department } 	for 1 with repeatable repetitions { ub:Professor } { ub:Professor ub:worksFor ub:Department } 	connect { ub:UndergraduateStudent ub:advisor ub:Professor  }
+for each { ub:GraduateStudent , ub:Department } { ub:GraduateStudent ub:memberOf ub:Department } 	for 1 with repeatable repetitions { ub:Professor } { ub:Professor ub:worksFor ub:Department } 	connect { ub:GraduateStudent ub:advisor ub:Professor }
+
+for each { ub:UndergraduateStudent } 	for 2-4 with local-distinct repetitions { ub:Course }	connect { ub:UndergraduateStudent ub:takesCourse ub:Course }
+for each { ub:GraduateStudent } 	for 1-3 with local-distinct repetitions { ub:GraduateCourse }	connect { ub:GraduateStudent ub:takesCourse ub:GraduateCourse }
+
+for each { ub:FullProfessor } 		create 15-20	{ ub:Publication } 	connect { ub:FullProfessor ub:publicationAuthor ub:Publication }
+for each { ub:AssociateProfessor } 	create 10-18	{ ub:Publication } 	connect { ub:AssociateProfessor ub:publicationAuthor ub:Publication }
+for each { ub:AssistantProfessor } 	create 5-10		{ ub:Publication } 	connect { ub:AssistantProfessor ub:publicationAuthor ub:Publication }
+for each { ub:Lecturer } 			create 0-5		{ ub:Publication } 	connect { ub:Lecturer ub:publicationAuthor ub:Publication }
+// Student is a Co-Author (with some existing publication by his advisor?)
+//for each { ub:GraduateStudent , ub:Professor } { ub:GraduateStudent ub:advisor ub:Professor } 	for 0-5 with local-distinct repetitions { ub:Publication } { ub:Professor ub:publicationAuthor ub:Publication }	connect { ub:GraduateStudent ub:publicationAuthor ub:Publication }
+
+// (didn't merge the following 3 since the faculty might have got the degree from different universities)
+for each { ub:Faculty } 	for 1 with repeatable repetitions { ub:University } 	connect { ub:Faculty ub:undergraduateDegreeFrom ub:University }
+for each { ub:Faculty } 	for 1 with repeatable repetitions { ub:University } 	connect { ub:Faculty ub:mastersDegreeFrom ub:University }
+for each { ub:Faculty } 	for 1 with repeatable repetitions { ub:University } 	connect { ub:Faculty ub:doctoralDegreeFrom ub:University }
+
+for each { ub:GraduateStudent } 	for 1 with repeatable repetitions { ub:University } 	connect { ub:GraduateStudent ub:undergraduateDegreeFrom ub:University }
+
+

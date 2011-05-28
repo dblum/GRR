@@ -1,6 +1,9 @@
 Introduction:
 -------------
-
+GRR (Generating Random RDF) is a powerful system for generating random RDF data, which can be used to test 
+Semantic Web applications. GRR has a SPARQL-like syntax, which allows the system to be both powerful and convenient.
+It is shown that GRR can easily be used to produce intricate datasets, such as the LUBM benchmark. 
+Optimization techniques are employed, which make the generation process efficient and scalable.
 
 License and Copyrights:
 -----------------------
