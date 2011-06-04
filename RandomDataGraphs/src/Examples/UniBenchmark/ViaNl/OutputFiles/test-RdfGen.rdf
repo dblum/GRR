@@ -8,6 +8,15 @@
 			<rdf:Bag>
 				<rdf:li>
 					<rdfGen:CounterDictionarySampler>
+						<rdfGen:type>foaf:Person</rdfGen:type>
+						<rdfGen:mode>
+							<rdfGen:GlobalDistinctMode />
+						</rdfGen:mode>
+						<rdfGen:label>Human</rdfGen:label>
+					</rdfGen:CounterDictionarySampler>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:CounterDictionarySampler>
 						<rdfGen:type>ub:University</rdfGen:type>
 						<rdfGen:mode>
 							<rdfGen:GlobalDistinctMode />
@@ -470,6 +479,12 @@
 						<rdfGen:nameSpace>file:///c:/Main%20Folder/GRR/RandomDataGraphs/src/Examples/UniBenchmark/Data/UniBenchRdfSchema.rdf#</rdfGen:nameSpace>
 					</rdfGen:AliasNsPair>
 				</rdf:li>
+				<rdf:li>
+					<rdfGen:AliasNsPair>
+						<rdfGen:alias>foaf:</rdfGen:alias>
+						<rdfGen:nameSpace>http://xmlns.com/foaf/0.1/</rdfGen:nameSpace>
+					</rdfGen:AliasNsPair>
+				</rdf:li>
 			</rdf:Bag>
 		</rdfGen:aliasNsMappings>
 	</rdfGen:NameSpaceMappings>
@@ -506,6 +521,34 @@
 				</rdf:li>
 				<rdf:li>
 					<rdfGen:Construct>
+						<rdfGen:queries />
+						<rdfGen:attributeNodeIdMap />
+						<rdfGen:attributeDynamicVarsMap />
+						<rdfGen:creationPattern>
+							<rdfGen:CreationPattern>
+								<rdfGen:creationPatternRepetitions>
+									<rdfGen:RepeatConst>
+										<rdfGen:constValue>10</rdfGen:constValue>
+									</rdfGen:RepeatConst>
+								</rdfGen:creationPatternRepetitions>
+								<rdfGen:oldNodes />
+								<rdfGen:newNodes>
+									<rdf:Bag>
+										<rdf:li>
+											<rdfGen:NewNode>
+												<rdfGen:id>1</rdfGen:id>
+												<rdfGen:type>foaf:Person</rdfGen:type>
+												<rdfGen:edges />
+											</rdfGen:NewNode>
+										</rdf:li>
+									</rdf:Bag>
+								</rdfGen:newNodes>
+							</rdfGen:CreationPattern>
+						</rdfGen:creationPattern>
+					</rdfGen:Construct>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:Construct>
 						<rdfGen:queries>
 							<rdf:Seq>
 								<rdf:li>
@@ -526,8 +569,8 @@
 							<rdf:Bag>
 								<rdf:li>
 									<rdfGen:MapPair>
-										<rdfGen:id>1</rdfGen:id>
-										<rdfGen:attributeName>?Var1</rdfGen:attributeName>
+										<rdfGen:id>2</rdfGen:id>
+										<rdfGen:attributeName>?Var2</rdfGen:attributeName>
 									</rdfGen:MapPair>
 								</rdf:li>
 							</rdf:Bag>
@@ -545,7 +588,7 @@
 									<rdf:Bag>
 										<rdf:li>
 											<rdfGen:OldNode>
-												<rdfGen:id>1</rdfGen:id>
+												<rdfGen:id>2</rdfGen:id>
 												<rdfGen:type>ub:University</rdfGen:type>
 												<rdfGen:edges />
 											</rdfGen:OldNode>
@@ -556,15 +599,15 @@
 									<rdf:Bag>
 										<rdf:li>
 											<rdfGen:NewNode>
-												<rdfGen:id>2</rdfGen:id>
+												<rdfGen:id>3</rdfGen:id>
 												<rdfGen:type>ub:Department</rdfGen:type>
 											<rdfGen:edges>
 												<rdf:Bag>
 													<rdf:li>
 														<rdfGen:Edge>
-															<rdfGen:id>3</rdfGen:id>
+															<rdfGen:id>4</rdfGen:id>
 															<rdfGen:type>ub:subOrganization</rdfGen:type>
-															<rdfGen:pointsToNodeId>1</rdfGen:pointsToNodeId>
+															<rdfGen:pointsToNodeId>2</rdfGen:pointsToNodeId>
 														</rdfGen:Edge>
 													</rdf:li>
 												</rdf:Bag>
@@ -599,8 +642,8 @@
 							<rdf:Bag>
 								<rdf:li>
 									<rdfGen:MapPair>
-										<rdfGen:id>4</rdfGen:id>
-										<rdfGen:attributeName>?Var4</rdfGen:attributeName>
+										<rdfGen:id>5</rdfGen:id>
+										<rdfGen:attributeName>?Var5</rdfGen:attributeName>
 									</rdfGen:MapPair>
 								</rdf:li>
 							</rdf:Bag>
@@ -618,7 +661,7 @@
 									<rdf:Bag>
 										<rdf:li>
 											<rdfGen:OldNode>
-												<rdfGen:id>4</rdfGen:id>
+												<rdfGen:id>5</rdfGen:id>
 												<rdfGen:type>ub:Department</rdfGen:type>
 												<rdfGen:edges />
 											</rdfGen:OldNode>
@@ -629,15 +672,15 @@
 									<rdf:Bag>
 										<rdf:li>
 											<rdfGen:NewNode>
-												<rdfGen:id>5</rdfGen:id>
+												<rdfGen:id>6</rdfGen:id>
 												<rdfGen:type>ub:FullProfessor</rdfGen:type>
 											<rdfGen:edges>
 												<rdf:Bag>
 													<rdf:li>
 														<rdfGen:Edge>
-															<rdfGen:id>6</rdfGen:id>
+															<rdfGen:id>7</rdfGen:id>
 															<rdfGen:type>ub:worksFor</rdfGen:type>
-															<rdfGen:pointsToNodeId>4</rdfGen:pointsToNodeId>
+															<rdfGen:pointsToNodeId>5</rdfGen:pointsToNodeId>
 														</rdfGen:Edge>
 													</rdf:li>
 												</rdf:Bag>
@@ -672,8 +715,8 @@
 							<rdf:Bag>
 								<rdf:li>
 									<rdfGen:MapPair>
-										<rdfGen:id>7</rdfGen:id>
-										<rdfGen:attributeName>?Var7</rdfGen:attributeName>
+										<rdfGen:id>8</rdfGen:id>
+										<rdfGen:attributeName>?Var8</rdfGen:attributeName>
 									</rdfGen:MapPair>
 								</rdf:li>
 							</rdf:Bag>
@@ -691,7 +734,7 @@
 									<rdf:Bag>
 										<rdf:li>
 											<rdfGen:OldNode>
-												<rdfGen:id>7</rdfGen:id>
+												<rdfGen:id>8</rdfGen:id>
 												<rdfGen:type>ub:Department</rdfGen:type>
 												<rdfGen:edges />
 											</rdfGen:OldNode>
@@ -702,15 +745,15 @@
 									<rdf:Bag>
 										<rdf:li>
 											<rdfGen:NewNode>
-												<rdfGen:id>8</rdfGen:id>
+												<rdfGen:id>9</rdfGen:id>
 												<rdfGen:type>ub:AssociateProfessor</rdfGen:type>
 											<rdfGen:edges>
 												<rdf:Bag>
 													<rdf:li>
 														<rdfGen:Edge>
-															<rdfGen:id>9</rdfGen:id>
+															<rdfGen:id>10</rdfGen:id>
 															<rdfGen:type>ub:worksFor</rdfGen:type>
-															<rdfGen:pointsToNodeId>7</rdfGen:pointsToNodeId>
+															<rdfGen:pointsToNodeId>8</rdfGen:pointsToNodeId>
 														</rdfGen:Edge>
 													</rdf:li>
 												</rdf:Bag>
@@ -745,8 +788,8 @@
 							<rdf:Bag>
 								<rdf:li>
 									<rdfGen:MapPair>
-										<rdfGen:id>10</rdfGen:id>
-										<rdfGen:attributeName>?Var10</rdfGen:attributeName>
+										<rdfGen:id>11</rdfGen:id>
+										<rdfGen:attributeName>?Var11</rdfGen:attributeName>
 									</rdfGen:MapPair>
 								</rdf:li>
 							</rdf:Bag>
@@ -764,7 +807,7 @@
 									<rdf:Bag>
 										<rdf:li>
 											<rdfGen:OldNode>
-												<rdfGen:id>10</rdfGen:id>
+												<rdfGen:id>11</rdfGen:id>
 												<rdfGen:type>ub:Department</rdfGen:type>
 												<rdfGen:edges />
 											</rdfGen:OldNode>
@@ -775,15 +818,15 @@
 									<rdf:Bag>
 										<rdf:li>
 											<rdfGen:NewNode>
-												<rdfGen:id>11</rdfGen:id>
+												<rdfGen:id>12</rdfGen:id>
 												<rdfGen:type>ub:AssistantProfessor</rdfGen:type>
 											<rdfGen:edges>
 												<rdf:Bag>
 													<rdf:li>
 														<rdfGen:Edge>
-															<rdfGen:id>12</rdfGen:id>
+															<rdfGen:id>13</rdfGen:id>
 															<rdfGen:type>ub:worksFor</rdfGen:type>
-															<rdfGen:pointsToNodeId>10</rdfGen:pointsToNodeId>
+															<rdfGen:pointsToNodeId>11</rdfGen:pointsToNodeId>
 														</rdfGen:Edge>
 													</rdf:li>
 												</rdf:Bag>
@@ -818,8 +861,8 @@
 							<rdf:Bag>
 								<rdf:li>
 									<rdfGen:MapPair>
-										<rdfGen:id>13</rdfGen:id>
-										<rdfGen:attributeName>?Var13</rdfGen:attributeName>
+										<rdfGen:id>14</rdfGen:id>
+										<rdfGen:attributeName>?Var14</rdfGen:attributeName>
 									</rdfGen:MapPair>
 								</rdf:li>
 							</rdf:Bag>
@@ -837,7 +880,7 @@
 									<rdf:Bag>
 										<rdf:li>
 											<rdfGen:OldNode>
-												<rdfGen:id>13</rdfGen:id>
+												<rdfGen:id>14</rdfGen:id>
 												<rdfGen:type>ub:Department</rdfGen:type>
 												<rdfGen:edges />
 											</rdfGen:OldNode>
@@ -848,15 +891,15 @@
 									<rdf:Bag>
 										<rdf:li>
 											<rdfGen:NewNode>
-												<rdfGen:id>14</rdfGen:id>
+												<rdfGen:id>15</rdfGen:id>
 												<rdfGen:type>ub:Lecturer</rdfGen:type>
 											<rdfGen:edges>
 												<rdf:Bag>
 													<rdf:li>
 														<rdfGen:Edge>
-															<rdfGen:id>15</rdfGen:id>
+															<rdfGen:id>16</rdfGen:id>
 															<rdfGen:type>ub:worksFor</rdfGen:type>
-															<rdfGen:pointsToNodeId>13</rdfGen:pointsToNodeId>
+															<rdfGen:pointsToNodeId>14</rdfGen:pointsToNodeId>
 														</rdfGen:Edge>
 													</rdf:li>
 												</rdf:Bag>
@@ -905,14 +948,14 @@
 							<rdf:Bag>
 								<rdf:li>
 									<rdfGen:MapPair>
-										<rdfGen:id>16</rdfGen:id>
-										<rdfGen:attributeName>?Var16</rdfGen:attributeName>
+										<rdfGen:id>17</rdfGen:id>
+										<rdfGen:attributeName>?Var17</rdfGen:attributeName>
 									</rdfGen:MapPair>
 								</rdf:li>
 								<rdf:li>
 									<rdfGen:MapPair>
-										<rdfGen:id>17</rdfGen:id>
-										<rdfGen:attributeName>?Var17</rdfGen:attributeName>
+										<rdfGen:id>18</rdfGen:id>
+										<rdfGen:attributeName>?Var18</rdfGen:attributeName>
 									</rdfGen:MapPair>
 								</rdf:li>
 							</rdf:Bag>
@@ -921,7 +964,7 @@
 							<rdf:Bag>
 								<rdf:li>
 									<rdfGen:AttVarPair>
-										<rdfGen:attributeName>?Var16</rdfGen:attributeName>
+										<rdfGen:attributeName>?Var17</rdfGen:attributeName>
 										<rdfGen:variableName>@var0</rdfGen:variableName>
 									</rdfGen:AttVarPair>
 								</rdf:li>
@@ -938,22 +981,22 @@
 									<rdf:Bag>
 										<rdf:li>
 											<rdfGen:OldNode>
-												<rdfGen:id>16</rdfGen:id>
+												<rdfGen:id>17</rdfGen:id>
 												<rdfGen:type>ub:Department</rdfGen:type>
 												<rdfGen:edges />
 											</rdfGen:OldNode>
 										</rdf:li>
 										<rdf:li>
 											<rdfGen:OldNode>
-												<rdfGen:id>17</rdfGen:id>
+												<rdfGen:id>18</rdfGen:id>
 												<rdfGen:type>ub:Department</rdfGen:type>
 											<rdfGen:edges>
 												<rdf:Bag>
 													<rdf:li>
 														<rdfGen:Edge>
-															<rdfGen:id>18</rdfGen:id>
+															<rdfGen:id>19</rdfGen:id>
 															<rdfGen:type>ub:headOf</rdfGen:type>
-															<rdfGen:pointsToNodeId>16</rdfGen:pointsToNodeId>
+															<rdfGen:pointsToNodeId>17</rdfGen:pointsToNodeId>
 														</rdfGen:Edge>
 													</rdf:li>
 												</rdf:Bag>

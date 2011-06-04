@@ -1,5 +1,6 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 PREFIX ub: <file:///c:/Main%20Folder/GRR/RandomDataGraphs/src/Examples/UniBenchmark/Data/UniBenchRdfSchema.rdf#> 
-SELECT ?Var1 
-WHERE { ?Var1 rdf:type ub:University .  } 
+PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+SELECT ?Var2 
+WHERE { ?Var2 rdf:type ub:University .  } 

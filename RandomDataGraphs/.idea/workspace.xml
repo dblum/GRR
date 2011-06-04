@@ -25,6 +25,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/Data/DataFilesGenerator.java" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/Data/DataFilesGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaJava/LubmJavaGenerator.java" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaJava/LubmJavaGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/Generator.txt" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/Generator.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/SamplerFunctionInput.txt" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/SamplerFunctionInput.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/SparqlQueries/SparqlQuery0.txt" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/SparqlQueries/SparqlQuery0.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/SparqlQueries/SparqlQuery1.txt" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/SparqlQueries/SparqlQuery1.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/SparqlQueries/SparqlQuery2.txt" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/SparqlQueries/SparqlQuery2.txt" />
@@ -88,7 +89,20 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.java" line="413" class="GrrGui.GrrGui$11" package="GrrGui">
+      <breakpoint url="file://$PROJECT_DIR$/src/RdfApi/RdfBasedRandomGraphAPI.java" line="109" class="RdfApi.RdfBasedRandomGraphAPI" package="RdfApi">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/JavaApi/RandomDataGraph/RandomGraphAPI.java" line="95" class="JavaApi.RandomDataGraph.RandomGraphAPI" package="JavaApi.RandomDataGraph">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -159,10 +173,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GrrGui.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GrrGui.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="10" selection-start="4529" selection-end="4529" vertical-scroll-proportion="0.32089552">
+            <state line="465" column="0" selection-start="23221" selection-end="23221" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -229,7 +243,16 @@
       <file leaf-file-name="RdfBasedRandomGraphAPI.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RdfApi/RdfBasedRandomGraphAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="16" selection-start="3805" selection-end="3805" vertical-scroll-proportion="0.0">
+            <state line="109" column="0" selection-start="4852" selection-end="4852" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RandomGraphAPI.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/JavaApi/RandomDataGraph/RandomGraphAPI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="93" column="6" selection-start="4442" selection-end="4442" vertical-scroll-proportion="0.08122744">
               <folding />
             </state>
           </provider>
@@ -264,7 +287,6 @@
         <option value="$PROJECT_DIR$/src/StorageWrappers/TDBConfigFileReader.java" />
         <option value="$PROJECT_DIR$/src/StorageWrappers/TDBWrapper.java" />
         <option value="$PROJECT_DIR$/src/SolutionConfig/SolutionConfigFile.java" />
-        <option value="$PROJECT_DIR$/src/RdfApi/RdfBasedRandomGraphAPI.java" />
         <option value="$PROJECT_DIR$/src/NaturalLanguageApi/NLParser.java" />
         <option value="$PROJECT_DIR$/src/JavaApi/Samplers/DictionarySamplers/CustomDictionarySampler.java" />
         <option value="$PROJECT_DIR$/src/SolutionConfig/Consts.java" />
@@ -274,6 +296,7 @@
         <option value="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/LubmNlGenerator.java" />
         <option value="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaRdf/LubmRdfGenerator.java" />
         <option value="$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.java" />
+        <option value="$PROJECT_DIR$/src/RdfApi/RdfBasedRandomGraphAPI.java" />
       </list>
     </option>
   </component>
@@ -319,96 +342,7 @@
       </pane>
       <pane id="Scope" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RandomDataGraphs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RandomDataGraphs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RandomDataGraphs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RandomDataGraphs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RandomDataGraphs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RandomDataGraphs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RandomDataGraphs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SolutionConfig" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RandomDataGraphs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RandomDataGraphs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RandomDataGraphs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RandomDataGraphs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GrrGui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GrrGui" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="Favorites" />
     </panes>
@@ -779,7 +713,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1040" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21938775" sideWeight="0.57843137" order="2" side_tool="false" content_ui="tabs" />
@@ -788,17 +722,17 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10816327" sideWeight="0.57843137" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4379085" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24872057" sideWeight="0.7431507" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.57843137" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5147059" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32656515" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28028747" sideWeight="0.23116438" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329455" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39918116" sideWeight="0.57843137" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2466735" sideWeight="0.57843137" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2466735" sideWeight="0.67156863" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42156863" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -888,11 +822,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/StorageWrappers/TDBConfigFileReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/StorageWrappers/TDBWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="761" selection-end="761" vertical-scroll-proportion="0.61182517" />
@@ -968,13 +897,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RdfApi/RdfBasedRandomGraphAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="16" selection-start="3805" selection-end="3805" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
@@ -991,7 +913,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="10" selection-start="4529" selection-end="4529" vertical-scroll-proportion="0.32089552">
+        <state line="465" column="0" selection-start="23221" selection-end="23221" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RdfApi/RdfBasedRandomGraphAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="0" selection-start="4852" selection-end="4852" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaApi/RandomDataGraph/RandomGraphAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="6" selection-start="4442" selection-end="4442" vertical-scroll-proportion="0.08122744">
           <folding />
         </state>
       </provider>

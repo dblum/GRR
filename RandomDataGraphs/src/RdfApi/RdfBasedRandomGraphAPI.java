@@ -102,9 +102,10 @@ public class RdfBasedRandomGraphAPI {
             _dbw.init(configFile);
             _graphModel = _dbw.getEmptyDbBasedModel();
 
-            // TODO: Add future support of multiple schema files
-            if (nsMap.size() != 1)
-                throw new IllegalStateException("Currently the system supports only one schema!");
+            if (nsMap.size() < 1)
+                throw new IllegalStateException("No schema was selected for the input generator file!");
+
+            boolean rdfGenAdded = false;
 
             for (String fullAlias : nsMap.keySet()) {
                 String alias = fullAlias.substring(0, fullAlias.length() - 1);
@@ -112,15 +113,21 @@ public class RdfBasedRandomGraphAPI {
                 String ns = fullNs.substring(0, fullNs.length() - 1);
 
                 _graphModel.setNsPrefix(alias, fullNs);
-                _graphModel.setNsPrefix("rdfGen", RDF_GEN_NS);
                 _schema = FileManager.get().loadModel(ns);
 
                 _infModel = ModelFactory.createRDFSModel(_schema, _graphModel);
                 _infModel.setNsPrefix(alias, fullNs);
-                _infModel.setNsPrefix("rdfGen", RDF_GEN_NS);
 
-                _dbw.storeModel(_infModel);
+
+                if (!rdfGenAdded) {
+                    _graphModel.setNsPrefix("rdfGen", RDF_GEN_NS);
+                    _infModel.setNsPrefix("rdfGen", RDF_GEN_NS);
+                    rdfGenAdded = true;
+                }
             }
+
+            _dbw.storeModel(_infModel);
+
 
         }
         catch (IOException ioe) {

@@ -1,3 +1,6 @@
+// Node for FOAF
+CounterDictionarySampler ; GlobalDistinctMode ; foaf:Person ; Human
+
 // Node samplers
 CounterDictionarySampler ; GlobalDistinctMode ; ub:University ; University
 CounterDictionarySampler ; GlobalDistinctMode ; ub:Department ; Department
