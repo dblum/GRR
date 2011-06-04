@@ -45,6 +45,7 @@ import JavaApi.Samplers.SamplerFunctions.SamplerFunction;
 import JavaApi.Samplers.SamplerFunctions.TypePropertiesFunction;
 import JavaApi.Samplers.SamplingMode;
 import RdfApi.QueryOptimizationMode;
+import SolutionConfig.Consts;
 import SolutionConfig.SolutionConfigFile;
 import StorageWrappers.*;
 import com.hp.hpl.jena.rdf.model.InfModel;
@@ -68,7 +69,7 @@ public class LubmJavaGenerator {
      */
 
     // Paths
-    private static final String TDB_CONFIG_PATH = SolutionConfigFile.BASE_PATH + "TDB\\tdbConfig.xml";
+    private static final String TDB_CONFIG_PATH = SolutionConfigFile.BASE_PATH + "TDB" + Consts.pathSep + "tdbConfig.xml";
 
     // Schema file path
     private static final String UNI_SCHEMA_FILE = "UniBenchRdfSchema.rdf";
@@ -78,7 +79,7 @@ public class LubmJavaGenerator {
     private static final String WEB_UNI_SCHEMA_PATH = WEB_PATH + UNI_SCHEMA_FILE;
 
     // Output file path
-    private static final String OUT_FILE_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs\\src\\Examples.UniBenchmark\\Data\\LubmJavaOutput.rdf";
+    private static final String OUT_FILE_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs" + Consts.pathSep + "src" + Consts.pathSep + "Examples.UniBenchmark" + Consts.pathSep + "Data" + Consts.pathSep + "LubmJavaOutput.rdf";
 
     // NSs
     private static final String UB_NS = WEB_UNI_SCHEMA_PATH + "#";

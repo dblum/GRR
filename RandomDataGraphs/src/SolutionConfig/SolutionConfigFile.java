@@ -30,6 +30,6 @@ package SolutionConfig;
  */
 public class SolutionConfigFile {
 
-    public static String BASE_PATH = "C:\\Main Folder\\GRR\\";
+    public static String BASE_PATH = "C:" + Consts.pathSep + "Main Folder" + Consts.pathSep + "GRR" + Consts.pathSep;
 
 }

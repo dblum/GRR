@@ -28,6 +28,7 @@ import Examples.Utils.ExpLogger;
 import NaturalLanguageApi.NLParser;
 import RdfApi.QueryOptimizationMode;
 import RdfApi.RdfBasedRandomGraphAPI;
+import SolutionConfig.Consts;
 import SolutionConfig.SolutionConfigFile;
 
 import java.text.SimpleDateFormat;
@@ -42,8 +43,8 @@ public class LubmNlGenerator {
 
 
 
-    private static String INPUT_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs\\src\\Examples\\UniBenchmark\\ViaNl\\InputFiles\\";
-    private static String OUTPUT_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs\\src\\Examples\\UniBenchmark\\ViaNl\\OutputFiles\\";
+    private static String INPUT_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs" + Consts.pathSep + "src" + Consts.pathSep + "Examples" + Consts.pathSep + "UniBenchmark" + Consts.pathSep + "ViaNl" + Consts.pathSep + "InputFiles" + Consts.pathSep + "";
+    private static String OUTPUT_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs" + Consts.pathSep + "src" + Consts.pathSep + "Examples" + Consts.pathSep + "UniBenchmark" + Consts.pathSep + "ViaNl" + Consts.pathSep + "OutputFiles" + Consts.pathSep + "";
     private static String S_FUNCTION_PATH = INPUT_PATH + "SamplerFunctionInput.txt";
     private static String TYPE_PROP_PATH = INPUT_PATH + "TypePropertyMappingsInput.txt";
     //private static String NL_GEN_INPUT_PATH = INPUT_PATH + "NLGeneratorUsage.txt";

@@ -28,6 +28,7 @@ package GrrGui;
 import NaturalLanguageApi.NLParser;
 import RdfApi.QueryOptimizationMode;
 import RdfApi.RdfBasedRandomGraphAPI;
+import SolutionConfig.Consts;
 
 import javax.swing.*;
 import javax.swing.text.BadLocationException;
@@ -99,10 +100,10 @@ public class GrrGui {
 
         // ######################### Debug #########################
 
-        _samplerFunctionFileName.setText(System.getProperty("user.dir") + "\\src\\Examples\\UniBenchmark\\ViaNl\\InputFiles\\SamplerFunctionInput.txt");
-        _generatorFileName.setText(System.getProperty("user.dir") + "\\src\\Examples\\UniBenchmark\\ViaNl\\InputFiles\\Generator.txt");
-        _typePropertyFileName.setText(System.getProperty("user.dir") + "\\src\\Examples\\UniBenchmark\\ViaNl\\InputFiles\\TypePropertyMappingsInput.txt");
-        _outputDirectoryName.setText(System.getProperty("user.dir") + "\\src\\Examples\\UniBenchmark\\ViaNl\\OutputFiles\\");
+        _samplerFunctionFileName.setText(System.getProperty("user.dir") +  Consts.pathSep + "src" + Consts.pathSep + "Examples" + Consts.pathSep + "UniBenchmark" + Consts.pathSep + "ViaNl" + Consts.pathSep + "InputFiles" + Consts.pathSep + "SamplerFunctionInput.txt");
+        _generatorFileName.setText(System.getProperty("user.dir")  + Consts.pathSep + "src" + Consts.pathSep + "Examples" + Consts.pathSep + "UniBenchmark" + Consts.pathSep + "ViaNl" + Consts.pathSep + "InputFiles" + Consts.pathSep + "Generator.txt");
+        _typePropertyFileName.setText(System.getProperty("user.dir")  + Consts.pathSep + "src" + Consts.pathSep + "Examples" + Consts.pathSep + "UniBenchmark" + Consts.pathSep + "ViaNl" + Consts.pathSep + "InputFiles" + Consts.pathSep + "TypePropertyMappingsInput.txt");
+        _outputDirectoryName.setText(System.getProperty("user.dir")  + Consts.pathSep + "src" + Consts.pathSep + "Examples" + Consts.pathSep + "UniBenchmark" + Consts.pathSep + "ViaNl" + Consts.pathSep + "OutputFiles"  + Consts.pathSep);
         _rdfOutputFileName.setText("test");
         _rdfGeneratorFileName.setText("test");
 
@@ -393,7 +394,7 @@ public class GrrGui {
                 // Demonstrate "Open" dialog:
                 int rVal = c.showOpenDialog(_mainPanel);
                 if (rVal == JFileChooser.APPROVE_OPTION) {
-                    _outputDirectoryName.setText(c.getSelectedFile().getAbsolutePath() + "\\");
+                    _outputDirectoryName.setText(c.getSelectedFile().getAbsolutePath() + Consts.pathSep);
                     //dir.setText(c.getCurrentDirectory().toString());
                     _log.setForeground(Color.GREEN);
                     _log.setText("Output path was loaded successfully");
@@ -425,7 +426,7 @@ public class GrrGui {
                 //--------------------------------------------------------------------------------------------------
                 System.out.println("NL File parsing start at: " + sdf.format(cal.getTime()));
                 String nlInputFile = _generatorFileName.getText();
-                int fileNamePos = nlInputFile.lastIndexOf("\\");
+                int fileNamePos = nlInputFile.lastIndexOf(Consts.pathSep);
                 String inputPath = nlInputFile.substring(0, fileNamePos + 1);
                 NLParser nlParser = NLParser.create(inputPath);
 

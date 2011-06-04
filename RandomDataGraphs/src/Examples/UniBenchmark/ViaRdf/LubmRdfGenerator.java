@@ -27,6 +27,7 @@ package Examples.UniBenchmark.ViaRdf;
 
 import RdfApi.QueryOptimizationMode;
 import RdfApi.RdfBasedRandomGraphAPI;
+import SolutionConfig.Consts;
 import SolutionConfig.SolutionConfigFile;
 
 /**
@@ -37,8 +38,8 @@ public class LubmRdfGenerator {
     /**
      * Consts for setting the input/output files
      */
-    private static final String IN_FILE_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs\\src\\RdfApi\\Examples\\RdfGeneratorInput.rdf";
-    private static final String OUT_FILE_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs\\src\\RdfApi\\Examples\\RdfUniOutput.rdf";
+    private static final String IN_FILE_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs" + Consts.pathSep + "src" + Consts.pathSep + "RdfApi" + Consts.pathSep + "Examples" + Consts.pathSep + "RdfGeneratorInput.rdf";
+    private static final String OUT_FILE_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs" + Consts.pathSep + "src" + Consts.pathSep + "RdfApi" + Consts.pathSep + "Examples" + Consts.pathSep + "RdfUniOutput.rdf";
 
     /**
      * Static member for using the RDF based API of the system

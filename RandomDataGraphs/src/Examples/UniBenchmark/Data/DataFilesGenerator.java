@@ -26,6 +26,7 @@
 package Examples.UniBenchmark.Data;
 
 import Examples.UniBenchmark.ViaJava.LubmJavaGenerator;
+import SolutionConfig.Consts;
 import SolutionConfig.SolutionConfigFile;
 
 import java.io.BufferedWriter;
@@ -58,22 +59,22 @@ public class DataFilesGenerator {
     private static final int MAX_PUB_LABELS =MAX_FULL_PROF_PUB_LABELS + MAX_ASSI_PROF_PUB_LABELS + MAX_ASSO_PROF_PUB_LABELS + MAX_LECTURER_PUB_LABELS;
 
 // Label data-file paths
-    public static final String UNI_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs\\src\\Examples.UniBenchmark\\Data\\UniversityNames.txt";
-    public static final String DEP_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs\\src\\Examples.UniBenchmark\\Data\\DepartmentNames.txt";
-    public static final String FULL_PROF_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs\\src\\Examples.UniBenchmark\\Data\\FullProfNames.txt";
-    public static final String ASSO_PROF_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs\\src\\Examples.UniBenchmark\\Data\\AssoProfNames.txt";
-    public static final String ASSI_PROF_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs\\src\\Examples.UniBenchmark\\Data\\AssiProfNames.txt";
-    public static final String LECTURER_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs\\src\\Examples.UniBenchmark\\Data\\LecturerNames.txt";
-    public static final String COURSE_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs\\src\\Examples.UniBenchmark\\Data\\CourseNames.txt";
-    public static final String GRAD_COURSE_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs\\src\\Examples.UniBenchmark\\Data\\GraduateCourseNames.txt";
-    public static final String RESEARCH_GROUP_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs\\src\\Examples.UniBenchmark\\Data\\ResearchGroup.txt";
-    public static final String UNDER_STUDENT_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs\\src\\Examples.UniBenchmark\\Data\\UnderStudentNames.txt";
-    public static final String GRAD_STUDENT_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs\\src\\Examples.UniBenchmark\\Data\\GradStudentNames.txt";
-    public static final String FULL_PROF_PUB_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs\\src\\Examples.UniBenchmark\\Data\\FullProfPubNames.txt";
-    public static final String ASSO_PROF_PUB_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs\\src\\Examples.UniBenchmark\\Data\\AssoProfPubNames.txt";
-    public static final String ASSI_PROF_PUB_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs\\src\\Examples.UniBenchmark\\Data\\AssiProfPubNames.txt";
-    public static final String LECTURER_PUB_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs\\src\\Examples.UniBenchmark\\Data\\LecturerPubNames.txt";
-    public static final String PUB_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs\\src\\Examples.UniBenchmark\\Data\\PubNames.txt";
+    public static final String UNI_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs" + Consts.pathSep + "src" + Consts.pathSep + "Examples.UniBenchmark" + Consts.pathSep + "Data" + Consts.pathSep + "UniversityNames.txt";
+    public static final String DEP_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs" + Consts.pathSep + "src" + Consts.pathSep + "Examples.UniBenchmark" + Consts.pathSep + "Data" + Consts.pathSep + "DepartmentNames.txt";
+    public static final String FULL_PROF_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs" + Consts.pathSep + "src" + Consts.pathSep + "Examples.UniBenchmark" + Consts.pathSep + "Data" + Consts.pathSep + "FullProfNames.txt";
+    public static final String ASSO_PROF_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs" + Consts.pathSep + "src" + Consts.pathSep + "Examples.UniBenchmark" + Consts.pathSep + "Data" + Consts.pathSep + "AssoProfNames.txt";
+    public static final String ASSI_PROF_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs" + Consts.pathSep + "src" + Consts.pathSep + "Examples.UniBenchmark" + Consts.pathSep + "Data" + Consts.pathSep + "AssiProfNames.txt";
+    public static final String LECTURER_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs" + Consts.pathSep + "src" + Consts.pathSep + "Examples.UniBenchmark" + Consts.pathSep + "Data" + Consts.pathSep + "LecturerNames.txt";
+    public static final String COURSE_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs" + Consts.pathSep + "src" + Consts.pathSep + "Examples.UniBenchmark" + Consts.pathSep + "Data" + Consts.pathSep + "CourseNames.txt";
+    public static final String GRAD_COURSE_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs" + Consts.pathSep + "src" + Consts.pathSep + "Examples.UniBenchmark" + Consts.pathSep + "Data" + Consts.pathSep + "GraduateCourseNames.txt";
+    public static final String RESEARCH_GROUP_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs" + Consts.pathSep + "src" + Consts.pathSep + "Examples.UniBenchmark" + Consts.pathSep + "Data" + Consts.pathSep + "ResearchGroup.txt";
+    public static final String UNDER_STUDENT_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs" + Consts.pathSep + "src" + Consts.pathSep + "Examples.UniBenchmark" + Consts.pathSep + "Data" + Consts.pathSep + "UnderStudentNames.txt";
+    public static final String GRAD_STUDENT_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs" + Consts.pathSep + "src" + Consts.pathSep + "Examples.UniBenchmark" + Consts.pathSep + "Data" + Consts.pathSep + "GradStudentNames.txt";
+    public static final String FULL_PROF_PUB_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs" + Consts.pathSep + "src" + Consts.pathSep + "Examples.UniBenchmark" + Consts.pathSep + "Data" + Consts.pathSep + "FullProfPubNames.txt";
+    public static final String ASSO_PROF_PUB_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs" + Consts.pathSep + "src" + Consts.pathSep + "Examples.UniBenchmark" + Consts.pathSep + "Data" + Consts.pathSep + "AssoProfPubNames.txt";
+    public static final String ASSI_PROF_PUB_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs" + Consts.pathSep + "src" + Consts.pathSep + "Examples.UniBenchmark" + Consts.pathSep + "Data" + Consts.pathSep + "AssiProfPubNames.txt";
+    public static final String LECTURER_PUB_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs" + Consts.pathSep + "src" + Consts.pathSep + "Examples.UniBenchmark" + Consts.pathSep + "Data" + Consts.pathSep + "LecturerPubNames.txt";
+    public static final String PUB_DATA_PATH = SolutionConfigFile.BASE_PATH + "RandomDataGraphs" + Consts.pathSep + "src" + Consts.pathSep + "Examples.UniBenchmark" + Consts.pathSep + "Data" + Consts.pathSep + "PubNames.txt";
     
     
     public static void main(String[] args)

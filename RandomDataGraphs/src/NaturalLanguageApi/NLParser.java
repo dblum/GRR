@@ -38,6 +38,7 @@ import NaturalLanguageApi.RdfGenObjects.SamplerFunctionParts.*;
 import NaturalLanguageApi.RdfGenObjects.TypePropParts.RdfProperty;
 import NaturalLanguageApi.RdfGenObjects.TypePropParts.RdfTypePropertiesPair;
 import RdfApi.RdfGenTypes;
+import SolutionConfig.Consts;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -314,8 +315,8 @@ public class NLParser {
      */
     private RdfDictionarySampler parseSamplerLine(String line) {
         // First we'll replace spaces with one space
-        String unTabbedLine = line.replaceAll("\\t+", "");
-        String formattedLine = unTabbedLine.replaceAll("\\s+", "");
+        String unTabbedLine = line.replaceAll(Consts.pathSep + "t+", "");
+        String formattedLine = unTabbedLine.replaceAll(Consts.pathSep + "s+", "");
 
         // Now we split over space
         String[] lineParts = formattedLine.split(";");
@@ -359,8 +360,8 @@ public class NLParser {
     private RdfTypePropertiesPair parseTypePropsLine(String line) {
 
          // First we'll replace spaces with one space
-        String unTabbedLine = line.replaceAll("\\t+", "");
-        String formattedLine = unTabbedLine.replaceAll("\\s{2,}", " ");
+        String unTabbedLine = line.replaceAll(Consts.pathSep + "t+", "");
+        String formattedLine = unTabbedLine.replaceAll(Consts.pathSep + "s{2,}", " ");
 
         // Now we split over space
         String[] lineParts = formattedLine.split(";");
@@ -378,9 +379,9 @@ public class NLParser {
      * @return True iff the given file is either empty or represents a comment (starts with // )
      */
     private boolean emptyOrCommentLine(String line) {
-        Pattern emptyLine = Pattern.compile("^[\\s]*$");
+        Pattern emptyLine = Pattern.compile("^[" + Consts.pathSep + "s]*$");
         Matcher emptyMatcher = emptyLine.matcher(line);
-        Pattern commentLine = Pattern.compile("^[\\s]*//.*");
+        Pattern commentLine = Pattern.compile("^[" + Consts.pathSep + "s]*//.*");
         Matcher commentMatcher = commentLine.matcher(line);
         return emptyMatcher.matches() || commentMatcher.matches();
     }
@@ -455,8 +456,8 @@ public class NLParser {
     private boolean nameSpaceDefLine(String line, HashMap<String, String> nsMap) {
 
         // First we'll replace all multiple tabs and spaces with one space
-        String noTabbedLine = line.replaceAll("\\t+", " ");
-        String formattedLine = noTabbedLine.replaceAll("\\s{2,}", " ");
+        String noTabbedLine = line.replaceAll(Consts.pathSep + "t+", " ");
+        String formattedLine = noTabbedLine.replaceAll(Consts.pathSep + "s{2,}", " ");
 
         // Now we split over space
         String[] lineParts = formattedLine.split(" ");
@@ -514,9 +515,9 @@ public class NLParser {
      */
     private RdfConstruct parseConstructLine(String line, HashMap<String, String> nsMap) throws IOException {
 
-        // First we'll replace all multiple tabs and spaces with one space 
-        String noTabbedLine = line.replaceAll("\\t+", " ");
-        String formattedLine = noTabbedLine.replaceAll("\\s{2,}", " ");
+        // First we'll replace all multiple tabs and spaces with one space
+        String noTabbedLine = line.replaceAll(Consts.pathSep + "t+", " ");
+        String formattedLine = noTabbedLine.replaceAll(Consts.pathSep + "s{2,}", " ");
 
         // Now we split over space
         String[] lineParts = formattedLine.split(" ");
@@ -683,7 +684,7 @@ public class NLParser {
                     queryAttributeVariableMap,
                     nsMap);
             String query = pair.getQuery();
-            String queryFilePath = _inputPath + QUERY_DIRECTORY + "\\SparqlQuery" + _queryCounter.getNextValue() + ".txt";
+            String queryFilePath = _inputPath + QUERY_DIRECTORY  + Consts.pathSep + "SparqlQuery" + _queryCounter.getNextValue() + ".txt";
 
             // Write the query to the file
             createQueryFile(queryFilePath, query);
@@ -1066,11 +1067,11 @@ public class NLParser {
         _tokenIndex++;
 
         // regex for parsing
-        Pattern numRange = Pattern.compile("^[\\d]+-[\\d]+$");
+        Pattern numRange = Pattern.compile("^[" + Consts.pathSep + "d]+-[" + Consts.pathSep + "d]+$");
         Matcher numRangeMatcher = numRange.matcher(token);
-        Pattern pRange = Pattern.compile("^[\\d]+%-[\\d]+%$");
+        Pattern pRange = Pattern.compile("^[" + Consts.pathSep + "d]+%-[" + Consts.pathSep + "d]+%$");
         Matcher pRangeMatcher = pRange.matcher(token);
-        Pattern num = Pattern.compile("^[\\d]+");
+        Pattern num = Pattern.compile("^[" + Consts.pathSep + "d]+");
         Matcher numMatcher = num.matcher(token);
 
         if (token.equals(TOKEN_EACH))
@@ -1351,9 +1352,9 @@ public class NLParser {
         _tokenIndex++;
 
         // regex for parsing
-        Pattern numRange = Pattern.compile("^[\\d]+-[\\d]+$");
+        Pattern numRange = Pattern.compile("^[" + Consts.pathSep + "d]+-[" + Consts.pathSep + "d]+$");
         Matcher numRangeMatcher = numRange.matcher(token);
-        Pattern num = Pattern.compile("^[\\d]+");
+        Pattern num = Pattern.compile("^[" + Consts.pathSep + "d]+");
         Matcher numMatcher = num.matcher(token);
 
         if (numRangeMatcher.matches()) {

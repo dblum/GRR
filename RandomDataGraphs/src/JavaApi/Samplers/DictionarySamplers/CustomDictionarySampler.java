@@ -26,6 +26,7 @@
 package JavaApi.Samplers.DictionarySamplers;
 
 import JavaApi.Samplers.NumberSamplers.NaturalNumberSamplers.StdNaturalNumberSampler;
+import SolutionConfig.Consts;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -222,9 +223,9 @@ public class CustomDictionarySampler implements IDictionarySampler {
      * @return True iff the given file is either empty or represents a comment (starts with // )
      */
     private boolean emptyOrCommentLine(String line) {
-        Pattern emptyLine = Pattern.compile("^[\\s]*$");
+        Pattern emptyLine = Pattern.compile("^[" + Consts.pathSep + "s]*$");
         Matcher emptyMatcher = emptyLine.matcher(line);
-        Pattern commentLine = Pattern.compile("^//[\\w\\s]+");
+        Pattern commentLine = Pattern.compile("^//[" + Consts.pathSep + "w" + Consts.pathSep + "s]+");
         Matcher commentMatcher = commentLine.matcher(line);
         if (emptyMatcher.matches() || commentMatcher.matches())
             return true;
@@ -237,7 +238,7 @@ public class CustomDictionarySampler implements IDictionarySampler {
      * @return  True iff the given line is in the correct format
      */
     private boolean lineInValidFormat(String line) {
-        Pattern dataLine = Pattern.compile("[\\w|\\s]+;[\\s]*[\\d]{1,3}%[\\s]*");
+        Pattern dataLine = Pattern.compile("[" + Consts.pathSep + "w|" + Consts.pathSep + "s]+;[" + Consts.pathSep + "s]*[" + Consts.pathSep + "d]{1,3}%[" + Consts.pathSep + "s]*");
         Matcher dataMatcher = dataLine.matcher(line);
         if (dataMatcher.matches())
             return true;

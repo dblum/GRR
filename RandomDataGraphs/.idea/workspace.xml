@@ -14,7 +14,21 @@
     <option name="historyRevisionsNumber" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="3055f2f7-633d-4be3-a431-9de3db7e5cb5" name="Default" comment="" />
+    <list default="true" id="3055f2f7-633d-4be3-a431-9de3db7e5cb5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SolutionConfig/Consts.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.java" afterPath="$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/FoafBenchmark/ViaNl/FoafBenchNLApiRunner.java" afterPath="$PROJECT_DIR$/src/Examples/FoafBenchmark/ViaNl/FoafBenchNLApiRunner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/Data/DataFilesGenerator.java" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/Data/DataFilesGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaJava/LubmJavaGenerator.java" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaJava/LubmJavaGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/LubmNlGenerator.java" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/LubmNlGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaRdf/LubmRdfGenerator.java" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaRdf/LubmRdfGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JavaApi/Samplers/DictionarySamplers/CustomDictionarySampler.java" afterPath="$PROJECT_DIR$/src/JavaApi/Samplers/DictionarySamplers/CustomDictionarySampler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NaturalLanguageApi/NLParser.java" afterPath="$PROJECT_DIR$/src/NaturalLanguageApi/NLParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RdfApi/RdfBasedRandomGraphAPI.java" afterPath="$PROJECT_DIR$/src/RdfApi/RdfBasedRandomGraphAPI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SolutionConfig/SolutionConfigFile.java" afterPath="$PROJECT_DIR$/src/SolutionConfig/SolutionConfigFile.java" />
+    </list>
     <ignored path="RandomDataGraphs.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,7 +43,6 @@
     <rightPanel />
     <splitter proportion="0.5" />
   </component>
-  <component name="CoverageDataManager" choice="3" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
     <option name="REVERSE_PATCH" value="false" />
@@ -39,7 +52,33 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/LubmNlGenerator.java" line="45" class="Examples.UniBenchmark.ViaNl.LubmNlGenerator" package="Examples.UniBenchmark.ViaNl">
+      <breakpoint url="file://$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/LubmNlGenerator.java" line="46" class="Examples.UniBenchmark.ViaNl.LubmNlGenerator" package="Examples.UniBenchmark.ViaNl">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/NaturalLanguageApi/NLParser.java" line="124" class="NaturalLanguageApi.NLParser" package="NaturalLanguageApi">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.java" line="413" class="GrrGui.GrrGui$11" package="GrrGui">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -113,16 +152,90 @@
       <file leaf-file-name="GrrGui.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="8" selection-start="3293" selection-end="3293" vertical-scroll-proportion="0.0">
+            <state line="109" column="8" selection-start="4565" selection-end="4565" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SolutionConfigFile.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SolutionConfig/SolutionConfigFile.java">
+      <file leaf-file-name="FoafBenchNLApiRunner.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Examples/FoafBenchmark/ViaNl/FoafBenchNLApiRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="60" selection-start="1505" selection-end="1505" vertical-scroll-proportion="0.75622773">
+            <state line="79" column="57" selection-start="3885" selection-end="3885" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataFilesGenerator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Examples/UniBenchmark/Data/DataFilesGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="76" column="189" selection-start="7290" selection-end="7290" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LubmJavaGenerator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Examples/UniBenchmark/ViaJava/LubmJavaGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="140" column="28" selection-start="6993" selection-end="6993" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LubmNlGenerator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/LubmNlGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="71" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GrrGui.form" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NLParser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NaturalLanguageApi/NLParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="119" column="50" selection-start="5018" selection-end="5027" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomDictionarySampler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JavaApi/Samplers/DictionarySamplers/CustomDictionarySampler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="240" column="153" selection-start="8848" selection-end="8848" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LubmRdfGenerator.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Examples/UniBenchmark/ViaRdf/LubmRdfGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="103" selection-start="1702" selection-end="1702" vertical-scroll-proportion="0.22947761">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Consts.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SolutionConfig/Consts.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="49" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -135,25 +248,29 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="CHECKOUT_INCLUDE_TAGS" value="false" />
+    <option name="UPDATE_CHANGES_POLICY" value="STASH" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/NaturalLanguageApi/RdfGenObjects/RdfTypePropertiesMappings.java" />
-        <option value="$PROJECT_DIR$/src/NaturalLanguageApi/NLParser.java" />
-        <option value="$PROJECT_DIR$/src/RdfApi/ConstructionWrapper.java" />
-        <option value="$PROJECT_DIR$/src/RdfApi/QueryOptimizationMode.java" />
-        <option value="$PROJECT_DIR$/src/RdfApi/RdfBasedRandomGraphAPI.java" />
-        <option value="$PROJECT_DIR$/src/RdfApi/RdfGenTypes.java" />
-        <option value="$PROJECT_DIR$/src/RdfApi/RdfParser.java" />
-        <option value="$PROJECT_DIR$/src/RdfApi/RdfPrinter.java" />
-        <option value="$PROJECT_DIR$/src/StorageWrappers/IDBWrapper.java" />
         <option value="$PROJECT_DIR$/src/StorageWrappers/IFileWrapper.java" />
         <option value="$PROJECT_DIR$/src/StorageWrappers/RdfFormat.java" />
         <option value="$PROJECT_DIR$/src/StorageWrappers/StdFileWrapper.java" />
         <option value="$PROJECT_DIR$/src/StorageWrappers/TDBConfigFileReader.java" />
         <option value="$PROJECT_DIR$/src/StorageWrappers/TDBWrapper.java" />
-        <option value="$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.java" />
         <option value="$PROJECT_DIR$/src/SolutionConfig/SolutionConfigFile.java" />
+        <option value="$PROJECT_DIR$/src/RdfApi/RdfBasedRandomGraphAPI.java" />
+        <option value="$PROJECT_DIR$/src/NaturalLanguageApi/NLParser.java" />
+        <option value="$PROJECT_DIR$/src/JavaApi/Samplers/DictionarySamplers/CustomDictionarySampler.java" />
+        <option value="$PROJECT_DIR$/src/SolutionConfig/Consts.java" />
+        <option value="$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.java" />
+        <option value="$PROJECT_DIR$/src/Examples/FoafBenchmark/ViaNl/FoafBenchNLApiRunner.java" />
+        <option value="$PROJECT_DIR$/src/Examples/UniBenchmark/Data/DataFilesGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaJava/LubmJavaGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/LubmNlGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaRdf/LubmRdfGenerator.java" />
       </list>
     </option>
   </component>
@@ -166,7 +283,7 @@
       <profile-state />
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -194,11 +311,10 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Favorites" />
       <pane id="PackagesPane">
         <subPane />
       </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -249,8 +365,49 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RandomDataGraphs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RandomDataGraphs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RandomDataGraphs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RandomDataGraphs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GrrGui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GrrGui" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -261,7 +418,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="com.intellij.compiler.options.JavaCompilersTab" />
+    <property name="options.lastSelected" value="project.propVCSSupport.ChangelistConflict" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -430,6 +587,16 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" adl_options="" air_descriptor_path="" air_program_params="" air_publisher_id="" air_root_dir_path="" air_run_mode="AppDescriptor" browser_family="FIREFOX" class_name="" debugger_sdk="Module SDK" html_or_swf_file_path="" launcher_type="OSDefault" main_class_name="" method_name="" module_name="" output_log_level="" package_name="" player_path="FlashPlayer.exe" port="0" run_mode="HtmlOrSwfFile" run_trusted="false" scope="Class" socket_policy_port="0" url_to_launch="http://">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -463,6 +630,7 @@
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -481,6 +649,7 @@
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -501,6 +670,7 @@
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -527,6 +697,7 @@
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
     <list size="5">
@@ -560,6 +731,8 @@
   <component name="SvnConfiguration" maxAnnotateRevisions="500">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
     <option name="LAST_MERGED_REVISION" />
     <option name="MERGE_DRY_RUN" value="false" />
     <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
@@ -603,26 +776,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1040" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21938775" sideWeight="0.61928105" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.108829565" sideWeight="0.5496575" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41426146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10816327" sideWeight="0.61928105" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4379085" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24872057" sideWeight="0.7431507" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3820034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.57843137" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32767403" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32656515" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28028747" sideWeight="0.23116438" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329455" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39987752" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2466735" sideWeight="0.67232597" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42444822" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21971253" sideWeight="0.5496575" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2466735" sideWeight="0.5620915" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42156863" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29445073" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -633,6 +807,15 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
     <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
     <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
@@ -644,6 +827,7 @@
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
@@ -701,56 +885,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/RdfApi/ConstructionWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RdfApi/QueryOptimizationMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RdfApi/RdfBasedRandomGraphAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RdfApi/RdfGenTypes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RdfApi/RdfParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RdfApi/RdfPrinter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StorageWrappers/IDBWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StorageWrappers/IFileWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StorageWrappers/RdfFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StorageWrappers/StdFileWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/StorageWrappers/TDBConfigFileReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0" />
@@ -763,29 +897,99 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JavaApi/RandomDataGraph/GraphBuildingBlocks/Edge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="13" selection-start="1444" selection-end="1444" vertical-scroll-proportion="0.9074733">
-          <folding />
-        </state>
+        <state line="30" column="13" selection-start="1444" selection-end="1444" vertical-scroll-proportion="0.9074733" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NaturalLanguageApi/NLParser.java">
+    <entry file="file://$PROJECT_DIR$/src/JavaApi/RandomDataGraph/Matchers/IMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="270" column="0" selection-start="10787" selection-end="10787" vertical-scroll-proportion="0.030965392">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="8" selection-start="3293" selection-end="3293" vertical-scroll-proportion="0.0">
+        <state line="33" column="42" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.030852994">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SolutionConfig/SolutionConfigFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="60" selection-start="1505" selection-end="1505" vertical-scroll-proportion="0.75622773">
+        <state line="29" column="54" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RdfApi/RdfBasedRandomGraphAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="49" selection-start="4670" selection-end="4735" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaApi/Samplers/DictionarySamplers/CustomDictionarySampler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="240" column="153" selection-start="8848" selection-end="8848" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NaturalLanguageApi/NLParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="50" selection-start="5018" selection-end="5027" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SolutionConfig/Consts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="49" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="8" selection-start="4565" selection-end="4565" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Examples/FoafBenchmark/ViaNl/FoafBenchNLApiRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="57" selection-start="3885" selection-end="3885" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Examples/UniBenchmark/Data/DataFilesGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="189" selection-start="7290" selection-end="7290" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Examples/UniBenchmark/ViaJava/LubmJavaGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="28" selection-start="6993" selection-end="6993" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/LubmNlGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="71" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Examples/UniBenchmark/ViaRdf/LubmRdfGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="103" selection-start="1702" selection-end="1702" vertical-scroll-proportion="0.22947761">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

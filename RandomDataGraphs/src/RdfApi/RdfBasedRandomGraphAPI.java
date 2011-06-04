@@ -30,6 +30,7 @@ import JavaApi.RandomDataGraph.Patterns.ConstructionPattern;
 import JavaApi.RandomDataGraph.RandomGraphAPI;
 import JavaApi.Samplers.SamplerFunctions.SamplerFunction;
 import JavaApi.Samplers.SamplerFunctions.TypePropertiesFunction;
+import SolutionConfig.Consts;
 import SolutionConfig.SolutionConfigFile;
 import StorageWrappers.*;
 import com.hp.hpl.jena.rdf.model.InfModel;
@@ -50,7 +51,7 @@ public class RdfBasedRandomGraphAPI {
     /**
      * Const values
      */
-    private static final String TDB_CONFIG_PATH = SolutionConfigFile.BASE_PATH + "TDB\\tdbConfig.xml";
+    private static final String TDB_CONFIG_PATH = SolutionConfigFile.BASE_PATH + "TDB" + Consts.pathSep + "tdbConfig.xml";
 
     private static final String PARSING_SCHEMA_FILE = "RdfGeneratorSchema.rdf";
     private static final String PARSING_SCHEMA_FILE_WEB_BASE = "http://www.cs.huji.ac.il/~danieb12/";
