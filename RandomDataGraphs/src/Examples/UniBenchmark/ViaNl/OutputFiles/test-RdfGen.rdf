@@ -467,7 +467,7 @@
 				<rdf:li>
 					<rdfGen:AliasNsPair>
 						<rdfGen:alias>ub:</rdfGen:alias>
-						<rdfGen:nameSpace>file:///c:/Main%20Folder/Uni/Sixth%20Year/Semester%20B/DB%20Lab/RandomDataGraphs/src/Examples/UniBenchmark/Data/UniBenchRdfSchema.rdf#</rdfGen:nameSpace>
+						<rdfGen:nameSpace>file:///c:/Main%20Folder/GRR/RandomDataGraphs/src/Examples/UniBenchmark/Data/UniBenchRdfSchema.rdf#</rdfGen:nameSpace>
 					</rdfGen:AliasNsPair>
 				</rdf:li>
 			</rdf:Bag>

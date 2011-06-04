@@ -1,4 +1,4 @@
-namespace ub: <file:///c:/Main Folder/Uni/Sixth Year/Semester B/DB Lab/RandomDataGraphs/src/Examples/UniBenchmark/Data/UniBenchRdfSchema.rdf#>
+namespace ub: <file:///c:/Main Folder/GRR/RandomDataGraphs/src/Examples/UniBenchmark/Data/UniBenchRdfSchema.rdf#>
 
 create 1 { ub:University }
 

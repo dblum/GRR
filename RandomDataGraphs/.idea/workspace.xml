@@ -16,12 +16,22 @@
   <component name="ChangeListManager">
     <list default="true" id="3055f2f7-633d-4be3-a431-9de3db7e5cb5" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SolutionConfig/Consts.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/OutputFiles/test-RdfGen.rdf" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/OutputFiles/test-RdfGen.rdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/OutputFiles/test.rdf" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/OutputFiles/test.rdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.java" afterPath="$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/FoafBenchmark/ViaNl/FoafBenchNLApiRunner.java" afterPath="$PROJECT_DIR$/src/Examples/FoafBenchmark/ViaNl/FoafBenchNLApiRunner.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/Data/DataFilesGenerator.java" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/Data/DataFilesGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaJava/LubmJavaGenerator.java" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaJava/LubmJavaGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/Generator.txt" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/Generator.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/SparqlQueries/SparqlQuery0.txt" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/SparqlQueries/SparqlQuery0.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/SparqlQueries/SparqlQuery1.txt" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/SparqlQueries/SparqlQuery1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/SparqlQueries/SparqlQuery2.txt" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/SparqlQueries/SparqlQuery2.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/SparqlQueries/SparqlQuery3.txt" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/SparqlQueries/SparqlQuery3.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/SparqlQueries/SparqlQuery4.txt" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/SparqlQueries/SparqlQuery4.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/SparqlQueries/SparqlQuery5.txt" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/SparqlQueries/SparqlQuery5.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/SparqlQueries/SparqlQuery6.txt" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/InputFiles/SparqlQueries/SparqlQuery6.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/LubmNlGenerator.java" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/LubmNlGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaRdf/LubmRdfGenerator.java" afterPath="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaRdf/LubmRdfGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JavaApi/Samplers/DictionarySamplers/CustomDictionarySampler.java" afterPath="$PROJECT_DIR$/src/JavaApi/Samplers/DictionarySamplers/CustomDictionarySampler.java" />
@@ -149,10 +159,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GrrGui.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GrrGui.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="8" selection-start="4565" selection-end="4565" vertical-scroll-proportion="0.0">
+            <state line="107" column="10" selection-start="4529" selection-end="4529" vertical-scroll-proportion="0.32089552">
               <folding />
             </state>
           </provider>
@@ -196,13 +206,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GrrGui.form" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="NLParser.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NaturalLanguageApi/NLParser.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -212,22 +215,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomDictionarySampler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JavaApi/Samplers/DictionarySamplers/CustomDictionarySampler.java">
+      <file leaf-file-name="LubmRdfGenerator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Examples/UniBenchmark/ViaRdf/LubmRdfGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="240" column="153" selection-start="8848" selection-end="8848" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="40" column="103" selection-start="1702" selection-end="1702" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LubmRdfGenerator.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Examples/UniBenchmark/ViaRdf/LubmRdfGenerator.java">
+      <file leaf-file-name="RdfBasedRandomGraphAPI.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RdfApi/RdfBasedRandomGraphAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="103" selection-start="1702" selection-end="1702" vertical-scroll-proportion="0.22947761">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="85" column="16" selection-start="3805" selection-end="3805" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -265,12 +268,12 @@
         <option value="$PROJECT_DIR$/src/NaturalLanguageApi/NLParser.java" />
         <option value="$PROJECT_DIR$/src/JavaApi/Samplers/DictionarySamplers/CustomDictionarySampler.java" />
         <option value="$PROJECT_DIR$/src/SolutionConfig/Consts.java" />
-        <option value="$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.java" />
         <option value="$PROJECT_DIR$/src/Examples/FoafBenchmark/ViaNl/FoafBenchNLApiRunner.java" />
         <option value="$PROJECT_DIR$/src/Examples/UniBenchmark/Data/DataFilesGenerator.java" />
         <option value="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaJava/LubmJavaGenerator.java" />
         <option value="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/LubmNlGenerator.java" />
         <option value="$PROJECT_DIR$/src/Examples/UniBenchmark/ViaRdf/LubmRdfGenerator.java" />
+        <option value="$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.java" />
       </list>
     </option>
   </component>
@@ -776,13 +779,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1040" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21938775" sideWeight="0.61928105" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21938775" sideWeight="0.57843137" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10816327" sideWeight="0.61928105" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10816327" sideWeight="0.57843137" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4379085" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24872057" sideWeight="0.7431507" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.57843137" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -793,9 +796,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28028747" sideWeight="0.23116438" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329455" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39987752" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39918116" sideWeight="0.57843137" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2466735" sideWeight="0.5620915" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2466735" sideWeight="0.57843137" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42156863" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -914,13 +917,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RdfApi/RdfBasedRandomGraphAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="49" selection-start="4670" selection-end="4735" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/JavaApi/Samplers/DictionarySamplers/CustomDictionarySampler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="240" column="153" selection-start="8848" selection-end="8848" vertical-scroll-proportion="0.0">
@@ -935,21 +931,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SolutionConfig/Consts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="49" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="8" selection-start="4565" selection-end="4565" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -975,6 +959,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Examples/UniBenchmark/ViaRdf/LubmRdfGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="103" selection-start="1702" selection-end="1702" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RdfApi/RdfBasedRandomGraphAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="16" selection-start="3805" selection-end="3805" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Examples/UniBenchmark/ViaNl/LubmNlGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="71" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.0">
@@ -984,12 +989,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Examples/UniBenchmark/ViaRdf/LubmRdfGenerator.java">
+    <entry file="file://$PROJECT_DIR$/gui/gui/GrrGui/GrrGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="103" selection-start="1702" selection-end="1702" vertical-scroll-proportion="0.22947761">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="107" column="10" selection-start="4529" selection-end="4529" vertical-scroll-proportion="0.32089552">
+          <folding />
         </state>
       </provider>
     </entry>

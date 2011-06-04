@@ -100,12 +100,12 @@ public class GrrGui {
 
         // ######################### Debug #########################
 
-        _samplerFunctionFileName.setText(System.getProperty("user.dir") +  Consts.pathSep + "src" + Consts.pathSep + "Examples" + Consts.pathSep + "UniBenchmark" + Consts.pathSep + "ViaNl" + Consts.pathSep + "InputFiles" + Consts.pathSep + "SamplerFunctionInput.txt");
-        _generatorFileName.setText(System.getProperty("user.dir")  + Consts.pathSep + "src" + Consts.pathSep + "Examples" + Consts.pathSep + "UniBenchmark" + Consts.pathSep + "ViaNl" + Consts.pathSep + "InputFiles" + Consts.pathSep + "Generator.txt");
-        _typePropertyFileName.setText(System.getProperty("user.dir")  + Consts.pathSep + "src" + Consts.pathSep + "Examples" + Consts.pathSep + "UniBenchmark" + Consts.pathSep + "ViaNl" + Consts.pathSep + "InputFiles" + Consts.pathSep + "TypePropertyMappingsInput.txt");
-        _outputDirectoryName.setText(System.getProperty("user.dir")  + Consts.pathSep + "src" + Consts.pathSep + "Examples" + Consts.pathSep + "UniBenchmark" + Consts.pathSep + "ViaNl" + Consts.pathSep + "OutputFiles"  + Consts.pathSep);
-        _rdfOutputFileName.setText("test");
-        _rdfGeneratorFileName.setText("test");
+        //_samplerFunctionFileName.setText(System.getProperty("user.dir") +  Consts.pathSep + "src" + Consts.pathSep + "Examples" + Consts.pathSep + "UniBenchmark" + Consts.pathSep + "ViaNl" + Consts.pathSep + "InputFiles" + Consts.pathSep + "SamplerFunctionInput.txt");
+        //_generatorFileName.setText(System.getProperty("user.dir")  + Consts.pathSep + "src" + Consts.pathSep + "Examples" + Consts.pathSep + "UniBenchmark" + Consts.pathSep + "ViaNl" + Consts.pathSep + "InputFiles" + Consts.pathSep + "Generator.txt");
+        //_typePropertyFileName.setText(System.getProperty("user.dir")  + Consts.pathSep + "src" + Consts.pathSep + "Examples" + Consts.pathSep + "UniBenchmark" + Consts.pathSep + "ViaNl" + Consts.pathSep + "InputFiles" + Consts.pathSep + "TypePropertyMappingsInput.txt");
+        //_outputDirectoryName.setText(System.getProperty("user.dir")  + Consts.pathSep + "src" + Consts.pathSep + "Examples" + Consts.pathSep + "UniBenchmark" + Consts.pathSep + "ViaNl" + Consts.pathSep + "OutputFiles"  + Consts.pathSep);
+        //_rdfOutputFileName.setText("test");
+        //_rdfGeneratorFileName.setText("test");
 
         //###########################################################
 
