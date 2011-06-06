@@ -223,9 +223,9 @@ public class CustomDictionarySampler implements IDictionarySampler {
      * @return True iff the given file is either empty or represents a comment (starts with // )
      */
     private boolean emptyOrCommentLine(String line) {
-        Pattern emptyLine = Pattern.compile("^[" + Consts.pathSep + "s]*$");
+        Pattern emptyLine = Pattern.compile("^[\\s]*$");
         Matcher emptyMatcher = emptyLine.matcher(line);
-        Pattern commentLine = Pattern.compile("^//[" + Consts.pathSep + "w" + Consts.pathSep + "s]+");
+        Pattern commentLine = Pattern.compile("^//[\\w\\s]+");
         Matcher commentMatcher = commentLine.matcher(line);
         if (emptyMatcher.matches() || commentMatcher.matches())
             return true;
@@ -238,7 +238,7 @@ public class CustomDictionarySampler implements IDictionarySampler {
      * @return  True iff the given line is in the correct format
      */
     private boolean lineInValidFormat(String line) {
-        Pattern dataLine = Pattern.compile("[" + Consts.pathSep + "w|" + Consts.pathSep + "s]+;[" + Consts.pathSep + "s]*[" + Consts.pathSep + "d]{1,3}%[" + Consts.pathSep + "s]*");
+        Pattern dataLine = Pattern.compile("[\\w|\\s]+;[\\s]*[\\d]{1,3}%[\\s]*");
         Matcher dataMatcher = dataLine.matcher(line);
         if (dataMatcher.matches())
             return true;
