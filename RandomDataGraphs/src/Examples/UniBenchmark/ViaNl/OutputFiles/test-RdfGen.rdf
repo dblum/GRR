@@ -156,6 +156,11 @@
 					</rdfGen:ExternalConstDictionarySampler>
 				</rdf:li>
 				<rdf:li>
+					<rdfGen:ExternalConstDictionarySampler>
+						<rdfGen:type>foaf:name</rdfGen:type>
+					</rdfGen:ExternalConstDictionarySampler>
+				</rdf:li>
+				<rdf:li>
 					<rdfGen:ConstDictionarySampler>
 						<rdfGen:type>ub:emailAddress</rdfGen:type>
 						<rdfGen:label>xxx@yyy.com</rdfGen:label>
@@ -181,12 +186,12 @@
 			<rdf:Bag>
 				<rdf:li>
 					<rdfGen:TypePropsPair>
-						<rdfGen:type>ub:University </rdfGen:type>
+						<rdfGen:type>foaf:Person</rdfGen:type>
 						<rdfGen:propertiesList>
 							<rdf:Bag>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:name</rdfGen:type>
+										<rdfGen:type>foaf:name</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 							</rdf:Bag>
@@ -195,12 +200,12 @@
 				</rdf:li>
 				<rdf:li>
 					<rdfGen:TypePropsPair>
-						<rdfGen:type>ub:Department </rdfGen:type>
+						<rdfGen:type>ub:University</rdfGen:type>
 						<rdfGen:propertiesList>
 							<rdf:Bag>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:name</rdfGen:type>
+										<rdfGen:type>ub:name</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 							</rdf:Bag>
@@ -209,37 +214,12 @@
 				</rdf:li>
 				<rdf:li>
 					<rdfGen:TypePropsPair>
-						<rdfGen:type>ub:FullProfessor </rdfGen:type>
+						<rdfGen:type>ub:Department</rdfGen:type>
 						<rdfGen:propertiesList>
 							<rdf:Bag>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:name </rdfGen:type>
-									</rdfGen:Property>
-								</rdf:li>
-								<rdf:li>
-									<rdfGen:Property>
-										<rdfGen:type> ub:emailAddress </rdfGen:type>
-									</rdfGen:Property>
-								</rdf:li>
-								<rdf:li>
-									<rdfGen:Property>
-										<rdfGen:type> ub:telephone </rdfGen:type>
-									</rdfGen:Property>
-								</rdf:li>
-								<rdf:li>
-									<rdfGen:Property>
-										<rdfGen:type> ub:researchInterest </rdfGen:type>
-									</rdfGen:Property>
-								</rdf:li>
-								<rdf:li>
-									<rdfGen:Property>
-										<rdfGen:type> ub:officeNumber </rdfGen:type>
-									</rdfGen:Property>
-								</rdf:li>
-								<rdf:li>
-									<rdfGen:Property>
-										<rdfGen:type> ub:age</rdfGen:type>
+										<rdfGen:type>ub:name</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 							</rdf:Bag>
@@ -248,37 +228,37 @@
 				</rdf:li>
 				<rdf:li>
 					<rdfGen:TypePropsPair>
-						<rdfGen:type>ub:AssociateProfessor </rdfGen:type>
+						<rdfGen:type>ub:FullProfessor</rdfGen:type>
 						<rdfGen:propertiesList>
 							<rdf:Bag>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:name </rdfGen:type>
+										<rdfGen:type>ub:name</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:emailAddress </rdfGen:type>
+										<rdfGen:type>ub:emailAddress</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:telephone </rdfGen:type>
+										<rdfGen:type>ub:telephone</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:researchInterest </rdfGen:type>
+										<rdfGen:type>ub:researchInterest</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:officeNumber </rdfGen:type>
+										<rdfGen:type>ub:officeNumber</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:age</rdfGen:type>
+										<rdfGen:type>ub:age</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 							</rdf:Bag>
@@ -287,37 +267,37 @@
 				</rdf:li>
 				<rdf:li>
 					<rdfGen:TypePropsPair>
-						<rdfGen:type>ub:AssistantProfessor </rdfGen:type>
+						<rdfGen:type>ub:AssociateProfessor</rdfGen:type>
 						<rdfGen:propertiesList>
 							<rdf:Bag>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:name </rdfGen:type>
+										<rdfGen:type>ub:name</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:emailAddress </rdfGen:type>
+										<rdfGen:type>ub:emailAddress</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:telephone </rdfGen:type>
+										<rdfGen:type>ub:telephone</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:researchInterest </rdfGen:type>
+										<rdfGen:type>ub:researchInterest</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:officeNumber </rdfGen:type>
+										<rdfGen:type>ub:officeNumber</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:age</rdfGen:type>
+										<rdfGen:type>ub:age</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 							</rdf:Bag>
@@ -326,27 +306,37 @@
 				</rdf:li>
 				<rdf:li>
 					<rdfGen:TypePropsPair>
-						<rdfGen:type>ub:Lecturer </rdfGen:type>
+						<rdfGen:type>ub:AssistantProfessor</rdfGen:type>
 						<rdfGen:propertiesList>
 							<rdf:Bag>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:name </rdfGen:type>
+										<rdfGen:type>ub:name</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:emailAddress </rdfGen:type>
+										<rdfGen:type>ub:emailAddress</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:telephone </rdfGen:type>
+										<rdfGen:type>ub:telephone</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:age</rdfGen:type>
+										<rdfGen:type>ub:researchInterest</rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type>ub:officeNumber</rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type>ub:age</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 							</rdf:Bag>
@@ -355,12 +345,27 @@
 				</rdf:li>
 				<rdf:li>
 					<rdfGen:TypePropsPair>
-						<rdfGen:type>ub:Course </rdfGen:type>
+						<rdfGen:type>ub:Lecturer</rdfGen:type>
 						<rdfGen:propertiesList>
 							<rdf:Bag>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:name</rdfGen:type>
+										<rdfGen:type>ub:name</rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type>ub:emailAddress</rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type>ub:telephone</rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type>ub:age</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 							</rdf:Bag>
@@ -369,12 +374,12 @@
 				</rdf:li>
 				<rdf:li>
 					<rdfGen:TypePropsPair>
-						<rdfGen:type>ub:GraduateCourse </rdfGen:type>
+						<rdfGen:type>ub:Course</rdfGen:type>
 						<rdfGen:propertiesList>
 							<rdf:Bag>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:name</rdfGen:type>
+										<rdfGen:type>ub:name</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 							</rdf:Bag>
@@ -383,12 +388,12 @@
 				</rdf:li>
 				<rdf:li>
 					<rdfGen:TypePropsPair>
-						<rdfGen:type>ub:ResearchGroup </rdfGen:type>
+						<rdfGen:type>ub:GraduateCourse</rdfGen:type>
 						<rdfGen:propertiesList>
 							<rdf:Bag>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:name</rdfGen:type>
+										<rdfGen:type>ub:name</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 							</rdf:Bag>
@@ -397,27 +402,12 @@
 				</rdf:li>
 				<rdf:li>
 					<rdfGen:TypePropsPair>
-						<rdfGen:type>ub:UndergraduateStudent </rdfGen:type>
+						<rdfGen:type>ub:ResearchGroup</rdfGen:type>
 						<rdfGen:propertiesList>
 							<rdf:Bag>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:name </rdfGen:type>
-									</rdfGen:Property>
-								</rdf:li>
-								<rdf:li>
-									<rdfGen:Property>
-										<rdfGen:type> ub:emailAddress </rdfGen:type>
-									</rdfGen:Property>
-								</rdf:li>
-								<rdf:li>
-									<rdfGen:Property>
-										<rdfGen:type> ub:telephone </rdfGen:type>
-									</rdfGen:Property>
-								</rdf:li>
-								<rdf:li>
-									<rdfGen:Property>
-										<rdfGen:type> ub:age</rdfGen:type>
+										<rdfGen:type>ub:name</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 							</rdf:Bag>
@@ -426,27 +416,27 @@
 				</rdf:li>
 				<rdf:li>
 					<rdfGen:TypePropsPair>
-						<rdfGen:type>ub:GraduateStudent </rdfGen:type>
+						<rdfGen:type>ub:UndergraduateStudent</rdfGen:type>
 						<rdfGen:propertiesList>
 							<rdf:Bag>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:name </rdfGen:type>
+										<rdfGen:type>ub:name</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:emailAddress </rdfGen:type>
+										<rdfGen:type>ub:emailAddress</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:telephone </rdfGen:type>
+										<rdfGen:type>ub:telephone</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:age</rdfGen:type>
+										<rdfGen:type>ub:age</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 							</rdf:Bag>
@@ -455,12 +445,41 @@
 				</rdf:li>
 				<rdf:li>
 					<rdfGen:TypePropsPair>
-						<rdfGen:type>ub:Publication </rdfGen:type>
+						<rdfGen:type>ub:GraduateStudent</rdfGen:type>
 						<rdfGen:propertiesList>
 							<rdf:Bag>
 								<rdf:li>
 									<rdfGen:Property>
-										<rdfGen:type> ub:name</rdfGen:type>
+										<rdfGen:type>ub:name</rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type>ub:emailAddress</rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type>ub:telephone</rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type>ub:age</rdfGen:type>
+									</rdfGen:Property>
+								</rdf:li>
+							</rdf:Bag>
+						</rdfGen:propertiesList>
+					</rdfGen:TypePropsPair>
+				</rdf:li>
+				<rdf:li>
+					<rdfGen:TypePropsPair>
+						<rdfGen:type>ub:Publication</rdfGen:type>
+						<rdfGen:propertiesList>
+							<rdf:Bag>
+								<rdf:li>
+									<rdfGen:Property>
+										<rdfGen:type>ub:name</rdfGen:type>
 									</rdfGen:Property>
 								</rdf:li>
 							</rdf:Bag>

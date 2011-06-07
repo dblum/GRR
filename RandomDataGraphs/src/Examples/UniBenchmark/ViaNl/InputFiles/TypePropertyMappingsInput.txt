@@ -1,3 +1,4 @@
+foaf:Person ; foaf:name
 ub:University ; ub:name
 ub:Department ; ub:name
 ub:FullProfessor ; ub:name ; ub:emailAddress ; ub:telephone ; ub:researchInterest ; ub:officeNumber ; ub:age

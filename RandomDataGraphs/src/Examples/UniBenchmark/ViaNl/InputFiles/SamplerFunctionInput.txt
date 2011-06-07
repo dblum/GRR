@@ -22,6 +22,8 @@ CounterDictionarySampler ; GlobalDistinctMode ; ub:officeNumber ; officeNumber
 
 ExternalConstDictionarySampler ; ub:name 
 
+ExternalConstDictionarySampler ; foaf:name 
+
 ConstDictionarySampler ; ub:emailAddress ; xxx@yyy.com
 ConstDictionarySampler ; ub:telephone ; xxx-yyy-zzzz
 ConstDictionarySampler ; ub:age ; xx

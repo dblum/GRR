@@ -315,11 +315,14 @@ public class NLParser {
      */
     private RdfDictionarySampler parseSamplerLine(String line) {
         // First we'll replace spaces with one space
-        String unTabbedLine = line.replaceAll(Consts.pathSep + "t+", "");
-        String formattedLine = unTabbedLine.replaceAll(Consts.pathSep + "s+", "");
+        String unTabbedLine = line.replaceAll("\\t+", "");
+        String formattedLine = unTabbedLine.replaceAll("\\s+", "");
 
         // Now we split over space
         String[] lineParts = formattedLine.split(";");
+        for(int i = 0; i < lineParts.length; i++){
+            lineParts[i] = lineParts[i].trim();
+        }
 
         if (lineParts[0].equals(RdfGenTypes.RES_RDF_TYPE_CUSTOM_DIC_SAMPLER)) {
             // We expect to have 2 more parts - total of 3
@@ -348,8 +351,9 @@ public class NLParser {
             if (lineParts.length != 3)
                 throw new IllegalArgumentException("Sampler-Function input file has an invalid line:" + line);
             return new RdfConstDictionarySampler(lineParts[1], lineParts[2]);
-        }else
+        }else{
             throw new IllegalArgumentException("Sampler-Function input file has an invalid line:" + line);
+        }
     }
 
     /**
@@ -360,8 +364,8 @@ public class NLParser {
     private RdfTypePropertiesPair parseTypePropsLine(String line) {
 
          // First we'll replace spaces with one space
-        String unTabbedLine = line.replaceAll(Consts.pathSep + "t+", "");
-        String formattedLine = unTabbedLine.replaceAll(Consts.pathSep + "s{2,}", " ");
+        String unTabbedLine = line.replaceAll("\\t+", "");
+        String formattedLine = unTabbedLine.replaceAll("\\s{1,}", "");
 
         // Now we split over space
         String[] lineParts = formattedLine.split(";");
@@ -379,9 +383,9 @@ public class NLParser {
      * @return True iff the given file is either empty or represents a comment (starts with // )
      */
     private boolean emptyOrCommentLine(String line) {
-        Pattern emptyLine = Pattern.compile("^[" + Consts.pathSep + "s]*$");
+        Pattern emptyLine = Pattern.compile("^[\\s]*$");
         Matcher emptyMatcher = emptyLine.matcher(line);
-        Pattern commentLine = Pattern.compile("^[" + Consts.pathSep + "s]*//.*");
+        Pattern commentLine = Pattern.compile("^[\\s]*//.*");
         Matcher commentMatcher = commentLine.matcher(line);
         return emptyMatcher.matches() || commentMatcher.matches();
     }
@@ -456,8 +460,8 @@ public class NLParser {
     private boolean nameSpaceDefLine(String line, HashMap<String, String> nsMap) {
 
         // First we'll replace all multiple tabs and spaces with one space
-        String noTabbedLine = line.replaceAll(Consts.pathSep + "t+", " ");
-        String formattedLine = noTabbedLine.replaceAll(Consts.pathSep + "s{2,}", " ");
+        String noTabbedLine = line.replaceAll("\\t+", " ");
+        String formattedLine = noTabbedLine.replaceAll("\\s{2,}", " ");
 
         // Now we split over space
         String[] lineParts = formattedLine.split(" ");
@@ -516,8 +520,8 @@ public class NLParser {
     private RdfConstruct parseConstructLine(String line, HashMap<String, String> nsMap) throws IOException {
 
         // First we'll replace all multiple tabs and spaces with one space
-        String noTabbedLine = line.replaceAll(Consts.pathSep + "t+", " ");
-        String formattedLine = noTabbedLine.replaceAll(Consts.pathSep + "s{2,}", " ");
+        String noTabbedLine = line.replaceAll("\\t+", " ");
+        String formattedLine = noTabbedLine.replaceAll("\\s{2,}", " ");
 
         // Now we split over space
         String[] lineParts = formattedLine.split(" ");
@@ -1067,11 +1071,11 @@ public class NLParser {
         _tokenIndex++;
 
         // regex for parsing
-        Pattern numRange = Pattern.compile("^[" + Consts.pathSep + "d]+-[" + Consts.pathSep + "d]+$");
+        Pattern numRange = Pattern.compile("^[\\d]+-[\\d]+$");
         Matcher numRangeMatcher = numRange.matcher(token);
-        Pattern pRange = Pattern.compile("^[" + Consts.pathSep + "d]+%-[" + Consts.pathSep + "d]+%$");
+        Pattern pRange = Pattern.compile("^[\\d]+%-[\\d]+%$");
         Matcher pRangeMatcher = pRange.matcher(token);
-        Pattern num = Pattern.compile("^[" + Consts.pathSep + "d]+");
+        Pattern num = Pattern.compile("^[\\d]+");
         Matcher numMatcher = num.matcher(token);
 
         if (token.equals(TOKEN_EACH))
@@ -1099,8 +1103,9 @@ public class NLParser {
             if (number < 0)
                 throw new IllegalArgumentException("Illegal const value: " + number);
             return new RdfSelectConst(number);
-        } else
+        } else {
             throw new IllegalArgumentException("Syntax Error:  (line: " + _lineIndex + " at word/char number: " + (_tokenIndex - 1) + ") -  Found an unsupported format for query result selection mode:" + token);
+        }
     }
 
     /**
@@ -1352,9 +1357,9 @@ public class NLParser {
         _tokenIndex++;
 
         // regex for parsing
-        Pattern numRange = Pattern.compile("^[" + Consts.pathSep + "d]+-[" + Consts.pathSep + "d]+$");
+        Pattern numRange = Pattern.compile("^[\\d]+-[\\d]+$");
         Matcher numRangeMatcher = numRange.matcher(token);
-        Pattern num = Pattern.compile("^[" + Consts.pathSep + "d]+");
+        Pattern num = Pattern.compile("^[\\d]+");
         Matcher numMatcher = num.matcher(token);
 
         if (numRangeMatcher.matches()) {
@@ -1371,9 +1376,9 @@ public class NLParser {
             if (number < 0)
                 throw new IllegalArgumentException("Illegal const value: " + number);
             return new RdfRepeatConst(number);
-        } else
+        } else {
             throw new IllegalArgumentException("Syntax Error:  (line: " + _lineIndex + " at word/char number: " + _tokenIndex + ") -  Found an unsupported format of pattern repeat mode:" + token);
-
+        }
     }
 
 }

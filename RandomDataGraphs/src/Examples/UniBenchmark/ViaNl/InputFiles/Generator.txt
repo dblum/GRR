@@ -1,6 +1,5 @@
 namespace ub: <file:///c:/Main Folder/GRR/RandomDataGraphs/src/Examples/UniBenchmark/Data/UniBenchRdfSchema.rdf#>
 namespace foaf: <http://xmlns.com/foaf/0.1/>
-//namespace foaf: <file:///c:/Main Folder/GRR/RandomDataGraphs/src/Examples/FoafBenchmark/Data/foaf_schema.rdf#>
 
 create 1 { ub:University }
 
