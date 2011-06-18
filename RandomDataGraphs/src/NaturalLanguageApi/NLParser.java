@@ -811,10 +811,16 @@ public class NLParser {
             if (targetType.startsWith("?"))
             {
                 String var = targetType.toLowerCase();
+                if (!varIdMap.containsKey(var))
+                    throw new IllegalArgumentException("can't resolve/find the variable: " + var + " at line: " + (_lineIndex-1));
                 pointsToId = varIdMap.get(var);
             }
             else
+            {
+                if (!classIdMap.containsKey(targetType))
+                    throw new IllegalArgumentException("can't resolve/find the type: " + targetType + " at line: " + (_lineIndex-1));
                 pointsToId = classIdMap.get(targetType);
+            }
 
             // Check if this is a new node (otherwise create it in the old nodes)
             if (!idNewNodeMap.containsKey(pointsToId)) {
@@ -822,6 +828,8 @@ public class NLParser {
                 if (targetType.startsWith("?"))
                 {
                     String var = targetType.toLowerCase();
+                    if (!varClassMap.containsKey(var))
+                        throw new IllegalArgumentException("can't resolve/find the variable: " + var + " at line: " + (_lineIndex-1));
                     String fullType = varClassMap.get(var);
                     String[] parts = fullType.split("-");
                     type = parts[1];
@@ -838,16 +846,24 @@ public class NLParser {
             if (sourceType.startsWith("?"))
             {
                 String var = sourceType.toLowerCase();
+                if (!varIdMap.containsKey(var))
+                    throw new IllegalArgumentException("can't resolve/find the variable: " + var + " at line: " + (_lineIndex-1));
                 sourceId = varIdMap.get(var);
             }
             else
-                    sourceId = classIdMap.get(sourceType);
+            {
+                if (!classIdMap.containsKey(sourceType))
+                    throw new IllegalArgumentException("can't resolve/find the class: " + sourceType + " at line: " + (_lineIndex-1));
+                sourceId = classIdMap.get(sourceType);
+            }
 
             if (!idNewNodeMap.containsKey(sourceId)) {
                 String type;
                 if (sourceType.startsWith("?"))
                 {
                     String var = sourceType.toLowerCase();
+                    if (!varClassMap.containsKey(var))
+                        throw new IllegalArgumentException("can't resolve/find the variable: " + var + " at line: " + (_lineIndex-1));
                     String fullType = varClassMap.get(var);
                     String[] parts = fullType.split("-");
                     type = parts[1];
@@ -935,7 +951,6 @@ public class NLParser {
         query += "SELECT ";
         for (String classType : selectArray)
         {
-
             query += classVarMap.get(classType) + " ";
         }
         query += "\n";
