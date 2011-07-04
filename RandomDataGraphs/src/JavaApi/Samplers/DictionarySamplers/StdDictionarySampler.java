@@ -97,7 +97,7 @@ public class StdDictionarySampler implements IDictionarySampler {
         HashSet<String> set = new HashSet<String>();
 
         // Decide what is the file type
-        String[] fileParts = fileName.split(".");
+        String[] fileParts = fileName.split("\\.");
         String fileTypeName = fileParts[fileParts.length-1].toLowerCase();
 
         // Parse the file according to it's type

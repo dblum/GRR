@@ -612,8 +612,8 @@ public class RdfParser {
             Resource mode = (Resource) samplerMapping.getProperty(new PropertyImpl(RDF_GEN_NS + RdfGenTypes.PROP_RDF_TYPE_MODE)).getObject();
             SamplingMode samplingMode = parseSamplingMode(mode);
             StdDictionarySampler dSampler = new StdDictionarySampler();
-            dSampler.init(dataPath);
             dSampler.setSamplingMode(samplingMode);
+            dSampler.init(dataPath);
             return new TypeDSamplerPair(type, dSampler);
         } else if (dSamplerType.equals(RDF_GEN_NS + RdfGenTypes.RES_RDF_TYPE_CTR_DIC_SAMPLER)) {
             Literal typeLit = (Literal) samplerMapping.getProperty(new PropertyImpl(RDF_GEN_NS + RdfGenTypes.PROP_RDF_TYPE_TYPE)).getObject();
